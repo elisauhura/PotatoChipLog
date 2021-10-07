@@ -1,0 +1,62 @@
+[
+    {
+        "n": "Apreender Verilog",
+        "s": "Completa",
+        "c": [1,1,2,0,0,0,0,0,0,0,0,0]
+    },
+    {
+        "n": "Adquirir a FPGA",
+        "s": "Completa",
+        "c": [0,0,0,0,1,2,0,0,0,0,0,0]
+    },
+    {
+        "n": "Apreender a usar a FPGA",
+        "s": "Completa",
+        "c": [0,0,0,0,0,1,1,2,0,0,0,0]
+    },
+    {
+        "n": "Estudo da arquitetura RISC-V",
+        "s": "Completa",
+        "c": [0,0,0,1,1,1,1,1,2,0,0,0]
+    },
+    {
+        "n": "Preparar ambiente para desenvolvimento",
+        "s": "Completa",
+        "c": [0,0,0,0,0,1,1,1,2,0,0,0]
+    },
+    {
+        "n": "Desenvolvimento do núcleo",
+        "s": "Em progresso",
+        "c": [0,0,0,0,0,0,0,0,1,1,3,0]
+    },
+    {
+        "n": "Validação e síntese do núcleo",
+        "s": "Espera",
+        "c": [0,0,0,0,0,0,0,0,0,3,3,0]
+    },
+    {
+        "n": "Organização da documentação",
+        "s": "Em progresso",
+        "c": [0,0,0,0,0,0,0,0,0,1,3,0]
+    },
+    {
+        "n": "Escrever monografia",
+        "s": "Em progresso",
+        "c": [0,0,0,0,0,0,0,0,1,1,3,0]
+    },
+    {
+        "n": "Poster do TCC",
+        "s": "Espera",
+        "c": [0,0,0,0,0,0,0,0,0,0,0,3]
+    },
+    {
+        "n": "Apresentar TCC",
+        "s": "Espera",
+        "c": [0,0,0,0,0,0,0,0,0,0,0,3]
+    },
+    {
+        "n": "Atualização final",
+        "s": "Espera",
+        "c": [0,0,0,0,0,0,0,0,0,0,0,3]
+    }
+]

@@ -1,0 +1,152 @@
+[
+	{
+		"date":"2021-06-04",
+		"time": 120,
+		"topic": "FPGA",
+		"content": [
+			{
+				"t": "p",
+				"i": [
+					"Teste de configuração da FPGA Artix-7. Além da preparação do ambiente (criação de máquina virtual e instalação do Vivado), realizei os experimentos disponibilizados pelo fabricante da placa (",
+					{
+						"t": "a",
+						"href": "https://github.com/ChinaQMTECH/XC7A100T-200T_Wukong_Board",
+						"i": "repo aqui"
+					},
+					")."
+				]
+			},
+			{
+				"t": "p",
+				"i": "Obter a placa foi um processo relativemente tranquilo, exceto pelo fato de eu ter enviado um endereço inválido. Com isso, ao chegar no correios da minha cidade, o pacote é devolvido para a china 🤯. Felizmente dei sorte ao conseguir comprar uma segunda JTAG no Mercado Livre (a primeira está voltando pra china) e de recuperar o pacote com a FPGA em si. A lição do dia é: revise o endereço de entrega!"
+			}
+		]
+	},
+	{
+		"date":"2021-06-05",
+		"time": 240,
+		"topic": "FPGA",
+		"content": [
+			{
+				"t": "p",
+				"i": "Finalização da configuração do ambiente de desenvolvimento e estudo das interfaces disponíveis na FPGA."
+			}
+		]
+	},
+	{
+		"date":"2021-05-15",
+		"time": 30,
+		"topic": "pre",
+		"content": [
+			{
+				"t": "p",
+				"i": "Desenvolvimento da proposta e definição de objetivos parciais."
+			}
+		]
+	},
+	{
+		"date":"2021-05-14",
+		"time": 60,
+		"topic": "pre",
+		"content": [
+			{
+				"t": "p",
+				"i": [
+					"Ingresso do Carlos Eduardo como mentor no projeto.",
+					"Ele é embaixador RISC-V no Brasil e seu conhecimento técnico no assunto é de grande valor.",
+					"Realizamos uma conversa acerca do modelo de FPGA a ser comprado e fechamos na Artix 7 da Xilinx.",
+					"Realizei a aquisicão da placa XC7A100T Wukong da QMTECH e um JTAG para realizar a programação.",
+					"O equipamento deve chegar na metade de junho.",
+				]
+			}
+		]
+	},
+	{
+		"date":"2021-05-10",
+		"time": 240,
+		"topic": "pre",
+		"content": [
+			{
+				"t": "p",
+				"i": [
+					"Estudo da especificação 0.10 da extensão de vetores do RISC-V,",
+        			"seu contexto em relação a outras extensões (ARM SVE e Intel AVX-512)",
+        			" e escrita de um breve texto sobre a mesma. ",
+					{
+						"t":"a",
+						"href":"./RVV.html",
+						"i":"Acesse aqui"
+					}, "."
+				]
+			}
+		]
+	},
+	{
+		"date":"2021-04-27",
+		"time": 240,
+		"topic": "pre",
+		"content": [
+			{
+				"t": "p",
+				"i": [
+					"Escrita de um texto sobre os compromissos do RISC-V. ",
+					{
+						"t":"a",
+						"href":"./compromissos.html",
+						"i":"Acesse aqui"
+					}, "."
+				]
+			}
+		]
+	},
+	{
+		"date":"2021-04-11",
+		"time": 240,
+		"topic": "pre",
+		"content": [
+			{
+				"t": "p",
+				"i": "Leitura do(s) livro(s) do Patterson e releitura da especificação do RISC-V. Curiosamente, o Patterson já está disponível numa edição que usa o RISC-V."
+			}
+		]
+	},
+	{
+		"date":"2021-04-05",
+		"time": 30,
+		"topic": "pre",
+		"content": [
+			{
+				"t": "p",
+				"i": "Batepapo inicial com o Gold para definir o caminho do TCC. Dentre os pontos importantes da conversa podemos listar:"
+			},
+			{
+				"f": "list",
+				"items": [
+					"Trabalhar com algo relacionado a RISC-V",
+  	    			"Explorar possíveis projetos já existentes"
+				]
+			}
+
+		]
+	},
+	{
+		"date":"2021-04-06",
+		"time": 300,
+		"topic": "Verilog",
+		"content": [
+			{
+				"t": "p",
+				"i": [
+					"Estudo de Verilog com base no livro Verilog HDL do Samir Palnitkar. ",
+					"Parte dos estudos resultaram em um pequeno projeto com exemplos de ",
+					"integração entre Verilog, C e Objective-C. ", {
+						"t":"a",
+						"href":"https://github.com/elUrso/ObjV",
+						"i": "Link para o repositório"
+					},
+					"."
+				]
+			}
+		]
+	}
+]

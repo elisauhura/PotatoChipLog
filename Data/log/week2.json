@@ -1,0 +1,39 @@
+[
+	{
+		"date":"2021-09-06",
+		"time": 400,
+		"topic": "Site, Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "Desenvolvimento do módulo de cronograma e do módulo de log do site. Preparação de uma folha de estilos básica."
+			},
+			{
+				"t": "p",
+				"i": "Design da seção de processamento de inteiros do núcleo."
+			}
+		]
+	},
+	{
+		"date":"2021-09-07",
+		"time": 480,
+		"topic": "Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "Implementação dos módulos de banco de regitro, ALU e soft RAM incluindo alguns testes."
+			}
+		]
+	},
+	{
+		"date":"2021-09-08",
+		"time": 90,
+		"topic": "Monografia, Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "Preparação do template da monografia e documentação inical da unidade de controle para a primeira iteração do core ."
+			}
+		]
+	}
+]

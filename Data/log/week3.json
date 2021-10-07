@@ -1,0 +1,92 @@
+[
+    {
+		"date":"2021-09-12",
+		"time": 180,
+		"topic": "Arquitetura",
+		"content": [
+			{
+				"t": "p",
+				"i": "Releitura da especificação do RISC-V para reforço."
+			}
+		]
+	},
+	{
+		"date":"2021-09-15",
+		"time": 540,
+		"topic": "Simulador, Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "Trabalhei na interface do simulador. Ele será usado para avaliar o comportamento do hardware de forma visual."
+			},
+			{
+				"t": "p",
+				"i": "Como desenvolvo em um Mac estou usando a interface nativa e hoje implementei um visualizador para o estado da RAM:"
+			},
+            {
+                "t": "img",
+                "src": "img/sim_001_ram.png",
+				"style": "object-fit: contain; max-width: 100%;"
+            },
+			{
+				"t": "p",
+				"i": "Por fim trabalhei no core para que o módulo de soft RAM funcione a partir do C++ para depois ligar com o vetor em C da UI."
+			}
+		]
+	},
+	{
+		"date":"2021-09-16",
+		"time": 540,
+		"topic": "Simulador, Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "A interface do simulador ganhou alguns botões, mas apenas Load Program funciona por enquanto."
+			},
+            {
+                "t": "img",
+                "src": "img/sim_002_ram.png",
+				"style": "object-fit: contain; max-width: 100%;"
+            },
+			{
+				"t": "p",
+				"i": "Agora o usuário pode definir o conteúdo da ram a partir de qualquer arquivo. Também é possível editar manualmente os bytes da memória e copiar uma região selecionada."
+			},
+			{
+				"t": "p",
+				"i": [
+					"Por fim trabalhei na interface C++/C/Obj-C entre a CU1 gerada pelo verilator e a aplicação Cocoa. ",
+					"Aproveitando para explicar um pouco como as coisas estão organizadas:"
+				]
+			},
+			{
+				"t": "p",
+				"i": [
+					"Os arquivos verilog ficam dentro da pasta stepV. ",
+					"Para um módulo 'X.v' é possível gerar 'testes unitários' a partir do arquivo 'X.unit.cpp' ou uma biblioteca a ",
+					"partir do arquivo 'X.cpp' e sua interface 'X.h'. ",
+					"Por exemplo, para a biblioteca do 'cu1.v' rodamos `$ make cu1.a` e para o 'teste uniário' do 'integer_alu.v' rodamos `$ make integer_alu.unit`."
+				]
+			}
+		]
+	},
+	{
+		"date":"2021-09-17",
+		"time": 300,
+		"topic": "Simulador, Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "Implementei o código para fazer com que os outros botões da interface passassem a funcionar."
+			},
+			{
+				"t": "p",
+				"i": "Alterei um pouco o makefile do stepV para gerar objetos que funcionem no Xcode. Vale notar que ainda é necessário linkar no projeto a biblioteca libc++."
+			},
+			{
+				"t": "p",
+				"i": "Adicionei o suporte a observação do clock usando o método poke da API do `cu1`."
+			}
+		]
+	}
+]

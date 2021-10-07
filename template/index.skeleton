@@ -1,0 +1,100 @@
+{
+  "f":"HTML5",
+  "a": "lang=\"pt\"",
+  "h": [
+    {
+      "t": "meta",
+      "charset": "UTF-8"
+    },
+    {
+      "f": "InjectCSS",
+      "s": "Data/index.css" 
+    },
+    {
+      "t": "title",
+      "i": "Potato 1"
+    }
+  ],
+  "b": [
+    {
+      "t": "h1",
+      "i": "Potato 1"
+    },
+    {
+      "t": "p",
+      "i": {
+        "t": "a",
+        "href": "https://github.com/elisauhura/PotatoChip",
+        "i": "Repositório no Github"
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Proposta",
+      "i": {
+        "f": "InjectJSON",
+        "s": "Data/proposta.json"
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Envolvidos",
+      "i": {
+        "f": "list",
+        "items": [
+          [
+            "Nina S. T. Hirata (", 
+            {"t": "a", "href":"https://www.ime.usp.br/~nina/", "i": "website"},
+            ") - Responsável"
+          ],
+          [
+            "Alfredo Goldman (", 
+            {"t": "a", "href":"https://www.ime.usp.br/~gold/", "i": "website"},
+            ") - Supervisor"
+          ],
+          [
+            "Carlos Eduardo de Paula (", 
+            {"t": "a", "href":"https://twitter.com/carlosedp/", "i": "@carlosedp"},
+            ") - Mentor"
+          ],
+          [
+            "Elisa Uhura Pereira da Silva (", 
+            {"t": "a", "href":"https://twitter.com/elisauhura", "i": "@elisauhura"},
+            ") - Aluna"
+          ]
+        ]
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Cronograma",
+      "scroll-y": true,
+      "i": [
+        {
+        "f": "cronograma",
+        "s": "Data/tarefas.json"
+        },
+        {
+          "t": "p",
+          "i": "Legenda: [1] Em Progresso [2] Concluido [3] Planejado"
+        }
+      ]
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Log",
+      "i": {
+        "f": "RenderLog",
+        "p": "Data/log"
+      }
+    },
+    {
+      "t": "p",
+      "i": "Check the circuit – Spock"
+    }
+  ]
+}

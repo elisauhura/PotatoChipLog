@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4CE52DAB270E9718008D5981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DAA270E9718008D5981 /* main.m */; };
+		4CE52DDE270E9D95008D5981 /* UHRRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DD9270E9D94008D5981 /* UHRRender.m */; };
+		4CE52E6B270EA2E2008D5981 /* UHRRenderLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DDA270E9D94008D5981 /* UHRRenderLog.m */; };
+		4CE52E6C270EA2E5008D5981 /* UHRSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DD6270E9D94008D5981 /* UHRSection.m */; };
+		4CE52E6D270EA2E8008D5981 /* UHRCronograma.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC5270E9D8C008D5981 /* UHRCronograma.m */; };
+		4CE52E6E270EA2EB008D5981 /* UHRHTML5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DCC270E9D8C008D5981 /* UHRHTML5.m */; };
+		4CE52E6F270EA2EE008D5981 /* UHRInjectCSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC6270E9D8C008D5981 /* UHRInjectCSS.m */; };
+		4CE52E70270EA2F0008D5981 /* UHRInjectJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC7270E9D8C008D5981 /* UHRInjectJSON.m */; };
+		4CE52E71270EA2F3008D5981 /* UHRList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC8270E9D8C008D5981 /* UHRList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +33,95 @@
 /* Begin PBXFileReference section */
 		4CE52DA7270E9718008D5981 /* PotatoChipLog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PotatoChipLog; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE52DAA270E9718008D5981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CE52DB1270E979A008D5981 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CE52DB4270E9812008D5981 /* week5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week5.json; sourceTree = "<group>"; };
+		4CE52DB5270E9812008D5981 /* week4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week4.json; sourceTree = "<group>"; };
+		4CE52DB6270E9812008D5981 /* week3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week3.json; sourceTree = "<group>"; };
+		4CE52DB7270E9812008D5981 /* old.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = old.json; sourceTree = "<group>"; };
+		4CE52DB8270E9812008D5981 /* week2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week2.json; sourceTree = "<group>"; };
+		4CE52DB9270E9812008D5981 /* week1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week1.json; sourceTree = "<group>"; };
+		4CE52DBA270E9812008D5981 /* week6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week6.json; sourceTree = "<group>"; };
+		4CE52DBC270E9857008D5981 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4CE52DBD270E9857008D5981 /* sim_002_ram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sim_002_ram.png; sourceTree = "<group>"; };
+		4CE52DBE270E9857008D5981 /* compromissos.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = compromissos.html; sourceTree = "<group>"; };
+		4CE52DBF270E9857008D5981 /* sim_001_ram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sim_001_ram.png; sourceTree = "<group>"; };
+		4CE52DC0270E9857008D5981 /* RVV.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RVV.html; sourceTree = "<group>"; };
+		4CE52DC5270E9D8C008D5981 /* UHRCronograma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRCronograma.m; sourceTree = "<group>"; };
+		4CE52DC6270E9D8C008D5981 /* UHRInjectCSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRInjectCSS.m; sourceTree = "<group>"; };
+		4CE52DC7270E9D8C008D5981 /* UHRInjectJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRInjectJSON.m; sourceTree = "<group>"; };
+		4CE52DC8270E9D8C008D5981 /* UHRList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRList.m; sourceTree = "<group>"; };
+		4CE52DCC270E9D8C008D5981 /* UHRHTML5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRHTML5.m; sourceTree = "<group>"; };
+		4CE52DD5270E9D94008D5981 /* UHRRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHRRender.h; sourceTree = "<group>"; };
+		4CE52DD6270E9D94008D5981 /* UHRSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRSection.m; sourceTree = "<group>"; };
+		4CE52DD9270E9D94008D5981 /* UHRRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRRender.m; sourceTree = "<group>"; };
+		4CE52DDA270E9D94008D5981 /* UHRRenderLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHRRenderLog.m; sourceTree = "<group>"; };
+		4CE52DE2270EA00E008D5981 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4CE52E26270EA26F008D5981 /* libUHRRenderModuleRenderLog.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleRenderLog.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E38270EA27B008D5981 /* libUHRRenderModuleSection.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleSection.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E42270EA27D008D5981 /* libUHRRenderModuleCronograma.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleCronograma.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E4C270EA27D008D5981 /* libUHRRenderModuleHTML5.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleHTML5.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E56270EA27E008D5981 /* libUHRRenderModuleInjectCSS.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleInjectCSS.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E60270EA27E008D5981 /* libUHRRenderModuleInjectJSON.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleInjectJSON.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleList.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE52E87270EA919008D5981 /* proposta.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = proposta.json; sourceTree = "<group>"; };
+		4CE52E88270EA919008D5981 /* index.skeleton */ = {isa = PBXFileReference; explicitFileType = text.json; path = index.skeleton; sourceTree = "<group>"; };
+		4CE52E89270EA919008D5981 /* tarefas.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tarefas.json; sourceTree = "<group>"; };
+		4CE52E8A270EA919008D5981 /* index.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		4CE52E8D270EAD1B008D5981 /* monografia.skeleton */ = {isa = PBXFileReference; explicitFileType = text.json; path = monografia.skeleton; sourceTree = "<group>"; };
+		4CE52E8E270EADB1008D5981 /* monografia.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = monografia.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4CE52DA4270E9718008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E24270EA26F008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E34270EA27B008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E3E270EA27D008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E48270EA27D008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E52270EA27E008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E5C270EA27E008D5981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E66270EA2C8008D5981 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +134,14 @@
 		4CE52D9E270E9718008D5981 = {
 			isa = PBXGroup;
 			children = (
+				4CE52DE2270EA00E008D5981 /* .gitignore */,
+				4CE52DB1270E979A008D5981 /* README.md */,
 				4CE52DA9270E9718008D5981 /* PotatoChipLog */,
+				4CE52DB3270E9812008D5981 /* Data */,
+				4CE52DE1270E9F67008D5981 /* Modules */,
+				4CE52E86270EA919008D5981 /* template */,
+				4CE52DBB270E9857008D5981 /* mac0499 */,
+				4CE52E72270EA38A008D5981 /* bin */,
 				4CE52DA8270E9718008D5981 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				4CE52DA7270E9718008D5981 /* PotatoChipLog */,
+				4CE52E26270EA26F008D5981 /* libUHRRenderModuleRenderLog.dylib */,
+				4CE52E38270EA27B008D5981 /* libUHRRenderModuleSection.dylib */,
+				4CE52E42270EA27D008D5981 /* libUHRRenderModuleCronograma.dylib */,
+				4CE52E4C270EA27D008D5981 /* libUHRRenderModuleHTML5.dylib */,
+				4CE52E56270EA27E008D5981 /* libUHRRenderModuleInjectCSS.dylib */,
+				4CE52E60270EA27E008D5981 /* libUHRRenderModuleInjectJSON.dylib */,
+				4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,11 +165,141 @@
 			isa = PBXGroup;
 			children = (
 				4CE52DAA270E9718008D5981 /* main.m */,
+				4CE52DD5270E9D94008D5981 /* UHRRender.h */,
+				4CE52DD9270E9D94008D5981 /* UHRRender.m */,
 			);
 			path = PotatoChipLog;
 			sourceTree = "<group>";
 		};
+		4CE52DB3270E9812008D5981 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4CE52E8C270EAB07008D5981 /* log */,
+				4CE52E8A270EA919008D5981 /* index.css */,
+				4CE52E89270EA919008D5981 /* tarefas.json */,
+				4CE52E87270EA919008D5981 /* proposta.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4CE52DBB270E9857008D5981 /* mac0499 */ = {
+			isa = PBXGroup;
+			children = (
+				4CE52DC4270E9860008D5981 /* img */,
+				4CE52DBC270E9857008D5981 /* index.html */,
+				4CE52E8E270EADB1008D5981 /* monografia.html */,
+				4CE52DBE270E9857008D5981 /* compromissos.html */,
+				4CE52DC0270E9857008D5981 /* RVV.html */,
+			);
+			path = mac0499;
+			sourceTree = "<group>";
+		};
+		4CE52DC4270E9860008D5981 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				4CE52DBD270E9857008D5981 /* sim_002_ram.png */,
+				4CE52DBF270E9857008D5981 /* sim_001_ram.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		4CE52DE1270E9F67008D5981 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4CE52DDA270E9D94008D5981 /* UHRRenderLog.m */,
+				4CE52DD6270E9D94008D5981 /* UHRSection.m */,
+				4CE52DC5270E9D8C008D5981 /* UHRCronograma.m */,
+				4CE52DCC270E9D8C008D5981 /* UHRHTML5.m */,
+				4CE52DC6270E9D8C008D5981 /* UHRInjectCSS.m */,
+				4CE52DC7270E9D8C008D5981 /* UHRInjectJSON.m */,
+				4CE52DC8270E9D8C008D5981 /* UHRList.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4CE52E72270EA38A008D5981 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		4CE52E86270EA919008D5981 /* template */ = {
+			isa = PBXGroup;
+			children = (
+				4CE52E88270EA919008D5981 /* index.skeleton */,
+				4CE52E8D270EAD1B008D5981 /* monografia.skeleton */,
+			);
+			path = template;
+			sourceTree = SOURCE_ROOT;
+		};
+		4CE52E8C270EAB07008D5981 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				4CE52DB7270E9812008D5981 /* old.json */,
+				4CE52DB9270E9812008D5981 /* week1.json */,
+				4CE52DB8270E9812008D5981 /* week2.json */,
+				4CE52DB6270E9812008D5981 /* week3.json */,
+				4CE52DB5270E9812008D5981 /* week4.json */,
+				4CE52DB4270E9812008D5981 /* week5.json */,
+				4CE52DBA270E9812008D5981 /* week6.json */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CE52E22270EA26F008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E30270EA27B008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E3A270EA27D008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E44270EA27D008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E4E270EA27E008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E58270EA27E008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E62270EA2C8008D5981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4CE52DA6270E9718008D5981 /* PotatoChipLog */ = {
@@ -82,6 +319,125 @@
 			productReference = 4CE52DA7270E9718008D5981 /* PotatoChipLog */;
 			productType = "com.apple.product-type.tool";
 		};
+		4CE52E25270EA26F008D5981 /* UHRRenderModuleRenderLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E2C270EA26F008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleRenderLog" */;
+			buildPhases = (
+				4CE52E22270EA26F008D5981 /* Headers */,
+				4CE52E23270EA26F008D5981 /* Sources */,
+				4CE52E24270EA26F008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleRenderLog;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E26270EA26F008D5981 /* libUHRRenderModuleRenderLog.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		4CE52E2F270EA27B008D5981 /* UHRRenderModuleSection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E35270EA27B008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleSection" */;
+			buildPhases = (
+				4CE52E30270EA27B008D5981 /* Headers */,
+				4CE52E32270EA27B008D5981 /* Sources */,
+				4CE52E34270EA27B008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleSection;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E38270EA27B008D5981 /* libUHRRenderModuleSection.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		4CE52E39270EA27D008D5981 /* UHRRenderModuleCronograma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E3F270EA27D008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleCronograma" */;
+			buildPhases = (
+				4CE52E3A270EA27D008D5981 /* Headers */,
+				4CE52E3C270EA27D008D5981 /* Sources */,
+				4CE52E3E270EA27D008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleCronograma;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E42270EA27D008D5981 /* libUHRRenderModuleCronograma.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		4CE52E43270EA27D008D5981 /* UHRRenderModuleHTML5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E49270EA27D008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleHTML5" */;
+			buildPhases = (
+				4CE52E44270EA27D008D5981 /* Headers */,
+				4CE52E46270EA27D008D5981 /* Sources */,
+				4CE52E48270EA27D008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleHTML5;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E4C270EA27D008D5981 /* libUHRRenderModuleHTML5.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		4CE52E4D270EA27E008D5981 /* UHRRenderModuleInjectCSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E53270EA27E008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleInjectCSS" */;
+			buildPhases = (
+				4CE52E4E270EA27E008D5981 /* Headers */,
+				4CE52E50270EA27E008D5981 /* Sources */,
+				4CE52E52270EA27E008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleInjectCSS;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E56270EA27E008D5981 /* libUHRRenderModuleInjectCSS.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		4CE52E57270EA27E008D5981 /* UHRRenderModuleInjectJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E5D270EA27E008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleInjectJSON" */;
+			buildPhases = (
+				4CE52E58270EA27E008D5981 /* Headers */,
+				4CE52E5A270EA27E008D5981 /* Sources */,
+				4CE52E5C270EA27E008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleInjectJSON;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E60270EA27E008D5981 /* libUHRRenderModuleInjectJSON.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		4CE52E61270EA2C8008D5981 /* UHRRenderModuleList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE52E67270EA2C8008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleList" */;
+			buildPhases = (
+				4CE52E62270EA2C8008D5981 /* Headers */,
+				4CE52E64270EA2C8008D5981 /* Sources */,
+				4CE52E66270EA2C8008D5981 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleList;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -89,9 +445,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = UHR;
 				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Uhura;
 				TargetAttributes = {
 					4CE52DA6270E9718008D5981 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					4CE52E25270EA26F008D5981 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -110,6 +471,13 @@
 			projectRoot = "";
 			targets = (
 				4CE52DA6270E9718008D5981 /* PotatoChipLog */,
+				4CE52E25270EA26F008D5981 /* UHRRenderModuleRenderLog */,
+				4CE52E2F270EA27B008D5981 /* UHRRenderModuleSection */,
+				4CE52E39270EA27D008D5981 /* UHRRenderModuleCronograma */,
+				4CE52E43270EA27D008D5981 /* UHRRenderModuleHTML5 */,
+				4CE52E4D270EA27E008D5981 /* UHRRenderModuleInjectCSS */,
+				4CE52E57270EA27E008D5981 /* UHRRenderModuleInjectJSON */,
+				4CE52E61270EA2C8008D5981 /* UHRRenderModuleList */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +487,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE52DDE270E9D95008D5981 /* UHRRender.m in Sources */,
 				4CE52DAB270E9718008D5981 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E23270EA26F008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E6B270EA2E2008D5981 /* UHRRenderLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E32270EA27B008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E6C270EA2E5008D5981 /* UHRSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E3C270EA27D008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E6D270EA2E8008D5981 /* UHRCronograma.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E46270EA27D008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E6E270EA2EB008D5981 /* UHRHTML5.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E50270EA27E008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E6F270EA2EE008D5981 /* UHRInjectCSS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E5A270EA27E008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E70270EA2F0008D5981 /* UHRInjectJSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE52E64270EA2C8008D5981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE52E71270EA2F3008D5981 /* UHRList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +665,11 @@
 		4CE52DAF270E9718008D5981 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PotatoChipLog/PotatoChipLog.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDL4S5S8SE;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,10 +677,194 @@
 		4CE52DB0270E9718008D5981 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PotatoChipLog/PotatoChipLog.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDL4S5S8SE;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4CE52E2D270EA26F008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E2E270EA26F008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CE52E36270EA27B008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E37270EA27B008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CE52E40270EA27D008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E41270EA27D008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CE52E4A270EA27D008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E4B270EA27D008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CE52E54270EA27E008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E55270EA27E008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CE52E5E270EA27E008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E5F270EA27E008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CE52E68270EA2C8008D5981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CE52E69270EA2C8008D5981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -274,6 +885,69 @@
 			buildConfigurations = (
 				4CE52DAF270E9718008D5981 /* Debug */,
 				4CE52DB0270E9718008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E2C270EA26F008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleRenderLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E2D270EA26F008D5981 /* Debug */,
+				4CE52E2E270EA26F008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E35270EA27B008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleSection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E36270EA27B008D5981 /* Debug */,
+				4CE52E37270EA27B008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E3F270EA27D008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleCronograma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E40270EA27D008D5981 /* Debug */,
+				4CE52E41270EA27D008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E49270EA27D008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleHTML5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E4A270EA27D008D5981 /* Debug */,
+				4CE52E4B270EA27D008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E53270EA27E008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleInjectCSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E54270EA27E008D5981 /* Debug */,
+				4CE52E55270EA27E008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E5D270EA27E008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleInjectJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E5E270EA27E008D5981 /* Debug */,
+				4CE52E5F270EA27E008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE52E67270EA2C8008D5981 /* Build configuration list for PBXNativeTarget "UHRRenderModuleList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE52E68270EA2C8008D5981 /* Debug */,
+				4CE52E69270EA2C8008D5981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

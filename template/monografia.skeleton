@@ -1,0 +1,34 @@
+{
+  "f":"HTML5",
+  "a": "lang=\"pt\"",
+  "h": [
+    {
+      "t": "meta",
+      "charset": "UTF-8"
+    },
+    {
+      "f": "InjectCSS",
+      "s": "Data/index.css"
+    },
+    {
+      "t": "title",
+      "i": "Potato Chip I"
+    }
+  ],
+  "b": [
+    {
+      "t": "h1",
+      "i": "Potato Chip I"
+    },
+    {
+      "t": "p",
+      "i": "O processo de desenvolvimento de uma CPU RISC-V"
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Introdução",
+      "i": "Lorem..."
+    }
+  ]
+}

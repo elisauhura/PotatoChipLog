@@ -1,0 +1,94 @@
+[
+    {
+        "date":"2021-09-26",
+        "time": 300,
+        "topic": "Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Reorganizei a estrutura do projeto para trabalhar pelo Xcode. Continuei os estudos de arquitetura privilegiada. Comecei a estruturar versão final de testes."
+            }
+        ]
+    },
+    {
+        "date":"2021-09-27",
+        "time": 300,
+        "topic": "Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei no rework da unidade de controle para ter suporte a CSRs."
+            }
+        ]
+    },
+    {
+        "date":"2021-09-28",
+        "time": 300,
+        "topic": "Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei no sistema de testes integrado ao Xcode."
+            }
+        ]
+    },
+    {
+        "date":"2021-09-29",
+        "time": 720,
+        "topic": "Core, Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Corrigi um bug no memory_fetch. Avancei o rework do control_unit que agora suport instruções dos opcodes LUI, AIUPC, OP e OP-IMM."
+            },
+            {
+                "t": "p",
+                "i": "Agora o workflow ocorre marjoriariamente no Xcode, exceto pela programação em Verilog pois o editor não tem suport a hints nem a coloração da sintaxe."
+            },
+            {
+                "t": "p",
+                "i": "Isso foi possível com a adição de tracing aos módulos compilados e a adição da classe UHRTestBench que permite executar a simulação a partir de uma série de transformações e constrains. Considere o snippet a seguir:"
+            },
+            {
+                "t": "pre",
+                "i": [
+                    "@8: @{\n\t@\"applyOnRise\": @[\n\t\t@(UHRControlUnitSignalMI_R), @1,\n\t\t@(UHRControlUnitSignalMI_D), @0xdeadbeef\n\t]\n},\n",
+                    "@9: @{\n\t@\"checkOnLow\": @[\n\t\t@(UHRControlUnitSignalINST), @0xdeadbeef,\n\t\t@(UHRControlUnitSignalSTATE), @(UHRControlUnitStateExecute)\n\t\t]\n},\n",
+                    "@10: @{\n\t@\"pass\": @{}\n}"
+                ]
+            },
+            {
+                "t": "p",
+                "i": [
+                    "A chave indica em qual clock que as regras devem ser aplicadas. ",
+                    "As regras disponíveis são applyOnRise e applyOnFall para simular estímulos, ",
+                    "checkOnLow e checkOnHigh para aplicar constrains e pass para encerrar a simulação. ",
+                    "Se algum constrain falhar, uma falha é emitida para o sistema de testes e a simulação ",
+                    "contínua até um pass ou chegar no limite de clocks pré definidos pelo usuário."
+                ]
+            }
+        ]
+    },
+    {
+        "date":"2021-09-30",
+        "time": 660,
+        "topic": "Core, Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Implentei o resto das instruções que estavam disponíveis na versão anterior do core e comecei a reestruturar o PI Sim para executar programas de teste."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-01",
+        "time": 480,
+        "topic": "Core, Simulador, Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Configurei a CI do Xcode para fazer com que os testes sejam executados a cada commit. Reorganizei a parte gráfica do simulador e sua integração com os módulos de simulação."
+            }
+        ]
+    }
+]

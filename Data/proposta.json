@@ -1,0 +1,30 @@
+[
+    {
+        "t": "p",
+        "i": "A arquitetura RISC-V é um ISA aberta lançada em 2010 que vem ganhando espaço em aplicações comerciais."
+    },
+    {
+        "t": "p",
+        "i": [
+            "A proposta deste TCC é o desenvolvimento e verificação de um núcleo RISC-V RV32I que seja pequeno e com suporte as extensões A, C, Zicsr e Zifencei. ",
+            "O núcleo tem como alvo o seu uso em sistemas embarcados que possuam restrições de tamanho físico ou de custo. ",
+            "Será usado como base projetos como o SERV [1] e PicoRV32 [2] que oferecem núcleos pequenos, porém sem o suporte ao conjunto de extensões propostas. ",
+            "O suporte ao conjunto proposto permitirá o uso de instruções compactas (que reduz o tamanho dos programas para RISC-V em torno de 30%) bem como o suporte à execução privilegiada para rodar código de terceiros de forma segura."
+        ]
+    },
+    {
+        "t": "p",
+        "i": [
+            "Se espera no fim do trabalho a implementação da CPU em Verilog, síntese da mesma em uma FPGA (Xilinx Artix 7) ",
+            "e um conjunto de softwares que demonstrem o funcionamento do chip além da documentação de todo o projeto."
+        ]
+    },
+    {
+        "f": "list",
+        "o": true,
+        "items": [
+            {"t": "a", "href":"https://github.com/olofk/serv", "i":"https://github.com/olofk/serv"},
+            {"t": "a", "href":"http://github.com/cliffordwolf/picorv32", "i":"http://github.com/cliffordwolf/picorv32"}
+        ]
+    }
+]

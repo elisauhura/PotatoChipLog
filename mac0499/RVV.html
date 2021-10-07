@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<meta  charset="UTF-8"/>
+<title>Extensão V</title>
+
+</head>
+<body>
+
+<p><b>Comentários sobre a extensão V do RISC-V</b></p>
+
+<p>Diferente de extensões SIMD que definem um tamanho
+fixo para os vetores operados, a extensão V (RVV) traz uma abordagem mais próxima
+dos antigos processadores CRAY, sendo proposta em meados de 2016 e chegando perto
+da sua versão 1.0.</p>
+
+<p>Instruções que operam sobre vetores são cruciais para um
+bom desempenho em aplicações de IA, multimídia e afins. Porém a natureza das extensões
+SIMD exige um novo conjunto de instruções para dar suporte a um novo tamanho de
+vetor. Isso implica na atualização de todo o conjunto de ferramentas para
+explorar corretamente essas novas instruções. Também existe a possibilidade do
+uso de aceleradores externos que exigem o seu conjunto próprio de programas
+para o uso correto (compiladores, linkers, loaders, firmware, drivers...).</p>
+
+<p>Diferentemente, a RVV não define um tamanho fixo de
+vetor (o <i>spec</i> 0.10 requer registradores de
+pelo menos 16 bytes), permitindo que um mesmo conjunto de instruções seja compartilhado
+entre um núcleo que possa operar em 32 F16 ao mesmo tempo e um núcleo que opere
+em apenas 1 F16 por vez. Deste modo, um mesmo programa é capaz de tirar o
+proveito máximo de núcleos diferentes sem gerar binários diferentes para cada
+um.</p>
+
+<p>A ARM oferece a <i>Scalable Vector Extension</i> (SVE), similar a RVV, para
+processadores com suporte a arquitetura ARMv8.2-A ou superior e é encontrada no
+Fugaku (atual supercomputador mais rápido do mundo
+que usa apenas núcleos ARM), demonstrando o potencial de extensões deste tipo.</p>
+
+<p>Já possível encontrar núcleos que implementam a RVV no
+mercado como o NX27V da Andes Technology que possui registradores de vetor com
+512bits de largura. E o fato de a extensão estar (quase) na versão 1.0, permite
+que um programa escrito hoje que explore o uso da extensão aproveite de forma
+satisfatória um hardware lançado daqui há 5 ou 6 anos, sem considerar possíveis
+arquiteturas no formato big.LITTLE.</p>
+
+<p>Seu funcionamento é relativamente simples de se
+compreender. Existem instruções que configuram os registradores para definir o
+tipo de dado trabalhado e o número de elementos desejados. O núcleo retorna
+quantos elementos foram alocados e instruções de transformação são usadas para
+trabalhar nesse subconjunto. O programa então executa um loop até tratar o número
+desejado de elementos. Mesmo exigindo registradores de pelo menos 128 bits, a
+especificação não exige que estes sejam transformados dentro de um tempo
+definido de ciclos.</p>
+
+<p>A especificação da RVV pode ser encontrada em <a
+href="https://github.com/riscv/riscv-v-spec">https://github.com/riscv/riscv-v-spec</a>.</p>
+
+</body>
+</html>

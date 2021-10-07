@@ -1,0 +1,35 @@
+[
+    {
+        "date":"2021-10-04",
+        "time": 480,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Comecei a escrever a introdução da monografia."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-05",
+        "time": 480,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei o trabalho na monografia, principalmente planejando e organizando seções da introdução e monografia."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-06",
+        "time": 150,
+        "topic": "Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Comecei a preparar o projeto para uma pequena reorganização necessária para mitigar bugs no core."
+            }
+        ]
+    }
+]

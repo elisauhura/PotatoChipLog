@@ -1,0 +1,46 @@
+[
+    {
+		"date":"2021-09-21",
+		"time": 270,
+		"topic": "Core",
+		"content": [
+			{
+				"t": "p",
+				"i": "Trabalhei na implementação parcial do sistema de Fetch-Decode-Execute para suporte ao conjunto base RV32I."
+			}
+		]
+	},
+	{
+		"date":"2021-09-22",
+		"time": 600,
+		"topic": "Core, Simulador, Bra",
+		"content": [
+			{
+				"t": "p",
+				"i": "Implementei parte das instruções base (branch, alu, jump). Adicionei log do valor de registradores no simulador. Adicionei -i instruções no BRA."
+			}
+		]
+	},
+	{
+		"date":"2021-09-23",
+		"time": 600,
+		"topic": "Core, Simulador, Bra",
+		"content": [
+			{
+				"t": "p",
+				"i": "Implementei parte das instruções base (load, store). Preparei a toolchain de risc-v para compilar programas em C. Adicionei quase todas as instruções RV32I no BRA."
+			}
+		]
+	},
+	{
+		"date":"2021-09-24",
+		"time": 660,
+		"topic": "Core, Arquitetura",
+		"content": [
+			{
+				"t": "p",
+				"i": "Resolvi um bug na instrução jal. Avaliei qual será o método inical de interface do sistema e dentre as opções optei por utilizar comunicação UART pela simplicidade. Estudei a parte privilegiada da especificação do RISC-V para implemetar a parte de CSR."
+			}
+		]
+	}
+]

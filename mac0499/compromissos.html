@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<meta  charset="UTF-8"/>
+<title>Compromissons</title>
+
+</head>
+<body>
+
+<p><b>Sobre os compromissos do RISC-V</b></p>
+
+<p>Em seu livro <i>“Computer Organization and Design”</i>,
+Patterson e Hennesy expõe três princípios de design acerca de Arquiteturas de
+Computadores:</p>
+
+<p>1- Simplicidade favorece regularidade<br/>
+2- Menor é mais rápido<br/>
+3- Bons designs exigem bons comprometimentos</p>
+
+<p>Como uma <i>ISA</i> destinada para uso geral e duradouro, diversas
+características de seu design parecem contradizer os princípios apresentados
+à primeira vista. Porém, ao analisarmos o contexto em que foi concebida, ficará
+claro como tais contradições aparentes se combinam para formar uma <i>ISA</i>
+coerente.</p>
+
+<p><b>Uma breve introdução ao RISC-V</b></p>
+
+<p>Apesar de ser uma <i>ISA</i>, o RISC-V pode ser visto
+também como uma especificação para combinar diversos conjuntos de instruções.
+Isso significa que a informação de que dois chips usam o RISC-V não implica em
+garantias de <i>intercompatibilidade</i>. É necessário saber qual é o conjunto
+de instruções (base e extensões) que os chips implementam para definir se um
+dado software será compatível com ambos. Todo chip vai implementar um conjunto
+de instruções base, dentre os possíveis temos:</p>
+
+<p>– RV32I: 32 registradores de 32 bits<br/>
+– RV32E: RV32I com a metade do número de registradores<br/>
+– RV64I: RV32I com 64 bits de largura e instruções extras para operações com 64 bits</p>
+
+<p>Existem extensões para adicionar o suporte a operações
+atômicas (“A”), instruções comprimidas (“C”), que representem um conjunto de extensões
+(“G”), etc. Seguindo uma série de convenções, se obtém uma sigla que representa
+a todos os conjuntos de instruções que um chip RISC-V implementa, por exemplo: “RV32IMA_Zifencei_Xhwacha”
+(base: RV32I; extensões: M, A, Zifencei; extensão não padronizadas: Xhwacha).</p>
+
+<p>Apesar de usar por padrão palavras de 32 bits, a
+arquitetura suporta instruções de tamanhos múltiplos de 16 bits.</p>
+
+<p>Mais detalhes sobre a arquitetura podem ser
+encontrados na sua especificação oficial disponível em <i>riscv.org</i>.</p>
+
+<p><b>Compromisso ou comprometimento</b></p>
+
+<p>O termo compromisso do português não possui um significado idêntico ao do termo
+<i>compromise</i> do inglês. Dessa forma usaremos ora o termo compromisso ora o termo
+comprometimento para melhor expressar o significado das frases. Mas de maneira
+geral, os termos serão usados para expressar a ideia de sacrifícios de design
+ou escolha com custos.</p>
+
+<p><b>Identificação de alguns compromissos</b></p>
+
+<p>O primeiro compromisso claro do RISC-V é o de <b>flexibilidade<i>
+</i>sobre cobertura</b>. A <i>ISA</i> não busca definir instruções para todas
+as finalidades possíveis e sim ter o espaço para que elas sejam implementadas e
+iteradas. Isto implica na possibilidade de que para melhor adequar uma solução
+de software, certas extensões possam ser exigidas e com isso uma quantia menor
+de chips suportem tal solução.</p>
+
+<p>O segundo compromisso que contrabalanceia o primeiro é
+o de <b>compatibilidade e combinação</b>. A extensões devem ser desenhadas de
+modo que elas sejam autocontidas (salve casos de extensões que estendem outras)
+para favorecer a combinação com outras extensões existentes. Isso otimiza o
+desenvolvimento de forma geral, pois partes podem ser removidas ou adicionadas
+com maior facilidade. Porém o design das extensões torna-se mais complexo já
+que se deve considerar possíveis interações não esperadas com outras extensões.</p>
+
+<p>O terceiro compromisso do RISC-V é o de <b>iteração e
+heterogeneidade</b>. As extensões não são rígidas, permitindo que sejam
+redesenhadas. Isso incentiva uma maior experimentação por parte dos designers e
+leva a uma heterogeneidade do ecossistema uma vez que soluções mais
+especializadas são incentivadas.</p>
+
+<p>Existem diversos outros compromissos que o RISC-V
+assumi, como o de preservar a posição de certos argumentos entre formatos de
+instruções distintos para simplificar a decodificação das instruções. O último
+compromisso que abordaremos abrange muitos desse compromissos, o compromisso de
+<b>ser <i>production ready</i></b>. Em outras palavras, arquitetura tem o
+compromisso de tomar certas decisões com base em desempenho e não em estética.</p>
+
+<p><b>Ligando os princípios com os comprometimentos</b></p>
+
+<p>O elemento crucial para entender como os compromissos
+da arquitetura respeitam os princípios propostos é o de que o RISC-V não busca
+ser apenas uma alternativa ao ARM ou ao AMD64, ele é desenhado com base no
+cenário atual de computação, onde o uso de hardware especializado é essencial
+para atender demandas de performance e consumo energético.</p>
+
+<p>Por essa ótica, a <b>simplicidade</b> aparece ao olhar
+o sistema como um todo. Um computador moderno (incluindo celulares e
+dispositivos) é composto por uma série de hardwares diferentes (CPU, GPU, TPU,
+DSP, ...) que muitas vezes operam como caixas pretas da perspectiva do software,
+com suas próprias <i>ISAs</i> (muitas vezes não documentadas). Uma solução RISC-V
+permite que todos esses hardwares heterogêneos compartilhem a mesma base e com
+isso permite que otimizações sejam replicáveis.<br>
+<br>
+A capacidade de escolher quais extensões fazem sentido para determinada solução
+pelo compromisso da <b>compatibilidade e combinação</b> permite que a <i>ISA</i>
+seja <b>menor</b> e consequentemente mais <b>rápida </b>(mas não
+necessariamente a mais rápida nem a menor de todas).</p>
+
+<p>É perceptível que existe uma maior complexidade
+intrínseca ao RISC-V, mas essa complexidade simplifica a construção de cenários
+heterogêneos. Essa troca é vista de forma positiva ao observar as tendências atuais
+e o compromisso de <b>ser <i>production ready</i> </b>o torna viável para que
+companhias invistam na evolução da tecnologia.</p>
+
+<p><b>Conclusão</b></p>
+
+<p>A forma ideal de enxergar o RISC-V é como um <b>conjunto
+de arquiteturas</b> resultante da aplicação dos princípios apresentados por
+Patterson e Hennesy ao cenário de computação heterogênea.</p>
+
+</body>
+</html>
