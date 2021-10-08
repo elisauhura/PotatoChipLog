@@ -31,5 +31,37 @@
                 "i": "Comecei a preparar o projeto para uma pequena reorganização necessária para mitigar bugs no core."
             }
         ]
+    },
+    {
+        "date":"2021-10-07",
+        "time": 960,
+        "topic": "Projeto, Testes",
+        "content": [
+            {
+                "t": "p",
+                "i": [
+                    "Separei a módule renderização do site para um outro repositório. Reduzindo o ",
+                    { "t": "i", "i": "cluttlering"}, "do código. Aproveitando isso criei um outro repositório para recomeçar o código."
+                ]
+            },
+            {
+                "t": "p",
+                "i": [
+                    "Nas última semana iterei bastante no modo de simular os módulos e escrever os testes, o que fez com que partes do código ",
+                    "usassem interfaces diferentes para a mesma tarefa. Começar do zero e ir puxando as partes necessárias se mostrou uma ",
+                    "escolha de valor pois pude integrar testes desde o começo e com integrações para ter um controle do progresso. ",
+                    "até o momento reescrevi o TestBench e usando a biblioteca OCMock pude resolver pequenos bugs que seríam difíceis de encontrar ",
+                    "durante a o uso da biblioteca."
+                ]
+            },
+            {
+                "t": "p",
+                "i": [
+                    "Apesar de ter consumido bastante tempo, esse rework me ajudou a estruturar melhor o texto da monografia que deverá ser incluído em ",
+                    "um site auxiliar logo mais. Ainda falta reescrever algumas coisas mas entendo que o cronograma não está comprometido. ",
+                    "Por fim fica a reflexão de que começar com um martelo ajuda, mas uma hora é melhor usar o pincel."
+                ]
+            }
+        ]
     }
 ]
