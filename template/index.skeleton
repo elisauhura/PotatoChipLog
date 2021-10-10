@@ -22,11 +22,19 @@
     },
     {
       "t": "p",
-      "i": {
-        "t": "a",
-        "href": "https://github.com/elisauhura/PotatoChip",
-        "i": "Repositório no Github"
-      }
+      "i": [
+          {
+            "t": "a",
+            "href": "https://github.com/elisauhura/PotatoChip",
+            "i": "Repositório no Github"
+          },
+          " | ",
+          {
+            "t": "a",
+            "href": "monografia.html",
+            "i": "Monografia"
+          }
+      ]
     },
     {
       "f": "section",

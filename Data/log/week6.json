@@ -63,5 +63,16 @@
                 ]
             }
         ]
+    },
+    {
+        "date":"2021-10-08",
+        "time": 270,
+        "topic": "Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Redesenhei a interface de memória para assumir um modelo assíncrono."
+            }
+        ]
     }
 ]
