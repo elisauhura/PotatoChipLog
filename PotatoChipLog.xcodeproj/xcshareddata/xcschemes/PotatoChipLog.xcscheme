@@ -137,6 +137,20 @@
                ReferencedContainer = "container:PotatoChipLog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4C26F6F327148B4C005A059E"
+               BuildableName = "libUHRRenderModuleInjectHTML.dylib"
+               BlueprintName = "UHRRenderModuleInjectHTML"
+               ReferencedContainer = "container:PotatoChipLog.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C26F6FD27148B96005A059E /* UHRInjectHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26F6FC27148B96005A059E /* UHRInjectHTML.m */; };
 		4CE52DAB270E9718008D5981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DAA270E9718008D5981 /* main.m */; };
 		4CE52DDE270E9D95008D5981 /* UHRRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DD9270E9D94008D5981 /* UHRRender.m */; };
 		4CE52E6B270EA2E2008D5981 /* UHRRenderLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DDA270E9D94008D5981 /* UHRRenderLog.m */; };
@@ -31,6 +32,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C26F6EF271485EA005A059E /* week7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week7.json; sourceTree = "<group>"; };
+		4C26F6F1271486D2005A059E /* introducao.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = introducao.html; sourceTree = "<group>"; };
+		4C26F6F227148938005A059E /* desenvolvimento.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = desenvolvimento.html; sourceTree = "<group>"; };
+		4C26F6FB27148B4C005A059E /* libUHRRenderModuleInjectHTML.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUHRRenderModuleInjectHTML.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C26F6FC27148B96005A059E /* UHRInjectHTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UHRInjectHTML.m; sourceTree = "<group>"; };
+		4C26F7302714D5FF005A059E /* resultados.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = resultados.html; sourceTree = "<group>"; };
+		4C26F7312714D610005A059E /* conclusao.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = conclusao.html; sourceTree = "<group>"; };
+		4C26F7332714D6BA005A059E /* referencias.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = referencias.html; sourceTree = "<group>"; };
 		4CE52DA7270E9718008D5981 /* PotatoChipLog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PotatoChipLog; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE52DAA270E9718008D5981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CE52DB1270E979A008D5981 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -72,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C26F6F727148B4C005A059E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CE52DA4270E9718008D5981 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +147,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C26F6F027148663005A059E /* monografia */ = {
+			isa = PBXGroup;
+			children = (
+				4C26F6F1271486D2005A059E /* introducao.html */,
+				4C26F6F227148938005A059E /* desenvolvimento.html */,
+				4C26F7302714D5FF005A059E /* resultados.html */,
+				4C26F7312714D610005A059E /* conclusao.html */,
+				4C26F7332714D6BA005A059E /* referencias.html */,
+			);
+			path = monografia;
+			sourceTree = "<group>";
+		};
+		4C26F7122714B842005A059E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4CE52D9E270E9718008D5981 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +178,7 @@
 				4CE52DBB270E9857008D5981 /* mac0499 */,
 				4CE52E72270EA38A008D5981 /* bin */,
 				4CE52DA8270E9718008D5981 /* Products */,
+				4C26F7122714B842005A059E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +193,7 @@
 				4CE52E56270EA27E008D5981 /* libUHRRenderModuleInjectCSS.dylib */,
 				4CE52E60270EA27E008D5981 /* libUHRRenderModuleInjectJSON.dylib */,
 				4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */,
+				4C26F6FB27148B4C005A059E /* libUHRRenderModuleInjectHTML.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +211,7 @@
 		4CE52DB3270E9812008D5981 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4C26F6F027148663005A059E /* monografia */,
 				4CE52E8C270EAB07008D5981 /* log */,
 				4CE52E8A270EA919008D5981 /* index.css */,
 				4CE52E89270EA919008D5981 /* tarefas.json */,
@@ -213,6 +251,7 @@
 				4CE52DC6270E9D8C008D5981 /* UHRInjectCSS.m */,
 				4CE52DC7270E9D8C008D5981 /* UHRInjectJSON.m */,
 				4CE52DC8270E9D8C008D5981 /* UHRList.m */,
+				4C26F6FC27148B96005A059E /* UHRInjectHTML.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -243,6 +282,7 @@
 				4CE52DB5270E9812008D5981 /* week4.json */,
 				4CE52DB4270E9812008D5981 /* week5.json */,
 				4CE52DBA270E9812008D5981 /* week6.json */,
+				4C26F6EF271485EA005A059E /* week7.json */,
 			);
 			path = log;
 			sourceTree = "<group>";
@@ -250,6 +290,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4C26F6F427148B4C005A059E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CE52E22270EA26F008D5981 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +349,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4C26F6F327148B4C005A059E /* UHRRenderModuleInjectHTML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C26F6F827148B4C005A059E /* Build configuration list for PBXNativeTarget "UHRRenderModuleInjectHTML" */;
+			buildPhases = (
+				4C26F6F427148B4C005A059E /* Headers */,
+				4C26F6F527148B4C005A059E /* Sources */,
+				4C26F6F727148B4C005A059E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UHRRenderModuleInjectHTML;
+			productName = "UHRRenderModuleRenderLog!";
+			productReference = 4C26F6FB27148B4C005A059E /* libUHRRenderModuleInjectHTML.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		4CE52DA6270E9718008D5981 /* PotatoChipLog */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CE52DAE270E9718008D5981 /* Build configuration list for PBXNativeTarget "PotatoChipLog" */;
@@ -478,11 +542,20 @@
 				4CE52E4D270EA27E008D5981 /* UHRRenderModuleInjectCSS */,
 				4CE52E57270EA27E008D5981 /* UHRRenderModuleInjectJSON */,
 				4CE52E61270EA2C8008D5981 /* UHRRenderModuleList */,
+				4C26F6F327148B4C005A059E /* UHRRenderModuleInjectHTML */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C26F6F527148B4C005A059E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C26F6FD27148B96005A059E /* UHRInjectHTML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CE52DA3270E9718008D5981 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +624,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4C26F6F927148B4C005A059E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C26F6FA27148B4C005A059E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		4CE52DAC270E9718008D5981 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -871,6 +970,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C26F6F827148B4C005A059E /* Build configuration list for PBXNativeTarget "UHRRenderModuleInjectHTML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C26F6F927148B4C005A059E /* Debug */,
+				4C26F6FA27148B4C005A059E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4CE52DA2270E9718008D5981 /* Build configuration list for PBXProject "PotatoChipLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

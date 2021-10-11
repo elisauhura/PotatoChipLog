@@ -28,7 +28,46 @@
       "f": "section",
       "level": "h2",
       "name": "Introdução",
-      "i": "Lorem..."
+      "i": {
+          "f": "InjectHTML",
+          "s": "Data/monografia/introducao.html"
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Desenvolvimento",
+      "i": {
+          "f": "InjectHTML",
+          "s": "Data/monografia/desenvolvimento.html"
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Resultados",
+      "i": {
+          "f": "InjectHTML",
+          "s": "Data/monografia/resultados.html"
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Conclusão",
+      "i": {
+          "f": "InjectHTML",
+          "s": "Data/monografia/conclusao.html"
+      }
+    },
+    {
+      "f": "section",
+      "level": "h2",
+      "name": "Referências",
+      "i": {
+          "f": "InjectHTML",
+          "s": "Data/monografia/referencias.html"
+      }
     }
   ]
 }
