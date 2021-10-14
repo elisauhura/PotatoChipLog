@@ -1,6 +1,21 @@
 <p>
 A RISC-V é uma arquitetura de conjunto de instruções (ISA) aberta e disponível de forma gratuita tanto para a indústria quanto para a academia sendo padronizada e patrocinada pela RISC-V International, uma organização inter-nacional sem fins lucrativos, que possui dentre seus membros grandes empresas do setor de tecnologia como Google, Alibaba Cloud e Western Digital (<a href=https://riscv.org/members/>https://riscv.org/members/</a>)
 </p>
+<p>
+Ela usa um modelo de conjunto base combinado com conjuntos de extensões. O conjunto base define o tamanho e a quantidade de registradores e as instruções básicas (leitura, escrita, pulo, pulo condicional, operações em inteiros e chamadas de sistema) enquanto as extensões definem instruções extras e em alguns casos outros registradores para operações mais complexas como suporte a ponto flutuante ou memória virtual.
+</p>
+<p>
+Assim um chip rodando RISC-V projetado para um dispositivo embarcado pode implementar o mínimo necessário de instruções para reduzir os custos e o tamanho do chip enquanto um chip para workstations pode implementar extensões como a de vetores para acelerar cargas de trabalho. Apesar da diferença entre operações suportadas, ambos os processadores partilham de um conjunto de instruções base e por consequência podem partilhar de uma toolchain similar.
+</p>
+<p>
+A arquitetura já conta com o suporte de  compiladores importantes como o <a href="https://llvm.org/doxygen/Triple_8h_source.html">LLVM</a>, o GCC e o compilador da <a href="https://golang.org/doc/install/source#environment">Go</a>. Além de imple-mentações de código fechado, existem diversas implementações de código aberto disponíveis como a <a href="https://github.com/olofk/serv">SERV</a> e  a <a href="https://github.com/chipsalliance/Cores-SweRV-EH2">SweRV EH2</a>, desenvolvida pela Western Digital.
+</p>
+<p>
+Sua adoção vem aumentado em diversos campos o que acelera seu amadurecimento como arquitetura que combinado com sua licença aberta permite um efeito bola de neve. Destaca-se dentre notícias recentes o uso da RISC-V no Nios® V/m da Intel, usado como processador para FPGAs da marca, e a produção da primeira leva de chips de teste do processador  <a href="https://www.european-processor-initiative.eu/tag/epac/">EPAC 1.0</a> da European Processor Initiative que utiliza a arquitetura.
+</p>
+<p>
+Ao combinar todos os fatores apresentados, a arquitetura se torna uma opção interessante para o desenvolvimento de processadores para recreação ou estudo. Assim o objetivo deste trabalho é registrar o processo de desenvolvimento de um processador RV32IACZicsrZifencei apelidado de Potato Chip I com sua sintetização em uma FPGA (Xilinx Artix 7).
+</p>
 <h3>Arquitetura</h3>
 <h3>Verilog</h3>
 <h3>FPGA</h3>

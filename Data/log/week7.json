@@ -2,11 +2,30 @@
     {
         "date":"2021-10-11",
         "time": 520,
-        "topic": "Core",
+        "topic": "Core, Monografia",
         "content": [
             {
                 "t": "p",
-                "i": "Escrever aqui"
+                "i": "Organizei o sistema para renderizar o site da monografia e finalizei a interface de memória."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-13",
+        "time": 780,
+        "topic": "Core, Memory",
+        "content": [
+            {
+                "t": "p",
+                "i": "Implementei o sistema de dispatch necessário para os módulos que precisam fazer interface direta com objetos."
+            },
+            {
+                "t": "p",
+                "i": "Implementei o módulo de memória falsa para simulações e testes."
+            },
+            {
+                "t": "p",
+                "i": "Resolvi um pequeno problema na ordem de build dos módulos."
             }
         ]
     }

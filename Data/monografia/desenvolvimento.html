@@ -1,20 +1,40 @@
-Ambiente de desenvolvimento
-    O Potato Chip I foi desenvolvido em um MacBook Pro 15” 2019 rodando:
-macOS Big Sur 11.6
-Xcode 13.0
-RISCV-Tools 0.2
-Verilator 4.200
-Scansion 1.12
-Virtual Box 6.1
-Virtual Box Extension Pack 6.1
-Ubuntu 20.??
-Vivado 2018 ??
+<h3> Ambiente de desenvolvimento </h3>
 
-(Adicionar referencias e links com mais detalhes posteriormente)
-    Utilizando a placa QMTech Artix 7 AT1000 rev A ??? para testar os circuitos sintetizados.  (Talvez adicionar a genesis caso utilizada)
-—
+(a ideia aqui é descrever os equipamentos utilizados)
+
+<p>
+O Potato Chip I foi densenvolvido em um Macbook Pro 15" 2019 rodando:
+<ul>
+<li>macOS Big Sur 11.6</li>
+<li>Xcode 13.0</li>
+<li>RISCV-Tools 0.2</li>
+<li>Verilator 4.200</li>
+<li>Scansion 1.12</li>
+<li>Virtual Box 6.1</li>
+<li>Virtual Box Extension Pack 6.1</li>
+<li>Ubuntu 20.??</li>
+<li>Vivado 2018 ??</li>
+</ul>
+ADICIONAR PLACAS de desenvolvimento
+</p>
+
+<h3>Planjamento Inicial</h3>
+
+Escrever sobre o planejamento inical e divisão de partes
+
+<h3>Problemas encontrados</h3>
+
+Pain points que levaram a reestruturação do projeto
+
+<h3>Estrutura do Projeto</h3>
+
+Explicar a versão finao do projeto
+
+----
+
+
 Planejamento inicial
-    Foi definido no início do projeto que o processador deveria ter dois ambientes alvos, um de simulação interativa com interface gráfica para configuração apelidado de PI Sim e um sintetizado em uma FPGA apelidado de PI Hard. Além disso seria necessário programas auxiliares para testes de unidade, benchmarks e registros de progresso.
+Foi definido no início do projeto que o processador deveria ter dois ambientes alvos, um de simulação interativa com interface gráfica para configuração apelidado de PI Sim e um sintetizado em uma FPGA apelidado de PI Hard. Além disso seria necessário programas auxiliares para testes de unidade, benchmarks e registros de progresso.
     Apesar de não ser um sistema operacional com um suporte abrangente na indústria design de hardware, foi escolhido usar o macOS para desenvolvimento devido o conhecimento prévio do sistema operacional e o eventual desafio de precisar desenvolver programas para completar certas tarefas. A única tarefa que exigiu o uso de uma máquina virtual foi a de sintetização e programação da FPGA já que o programa necessário para a tarefa não suporta o SO.
     Para a implementação do núcleo do processador compartilhada entre os ambiente seria utilizada a linguagem Verilog. Os módulos auxiliares do PI Hard utilizariam a mesma linguagem enquanto os módulos auxiliares do PI Sim utilizariam Objective-C que seria também usada para a programação dos competentes gráficos.
     Os testes utilizariam o framework de testes XCTest incluído no Xcode com com a implementação de classes auxiliares para estimular simulação, verificar restrições e imitar outros módulos.
