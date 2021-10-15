@@ -28,5 +28,20 @@
                 "i": "Resolvi um pequeno problema na ordem de build dos módulos."
             }
         ]
+    },
+    {
+        "date":"2021-10-13",
+        "time": 780,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": [
+                    "Trabalhei na implementação do Core, incluindo ALU e rigistradores. ",
+                    "Destaco que após adotar um regime de testes mais rígidos, pude melhorar de forma significativa a qualidade da implementação. ",
+                    "Bugs pequenos como a falta de um `break;` ou alteração do valor da variável errada costumam ser pegos durante a execução dos testes."
+                ]
+            }
+        ]
     }
 ]
