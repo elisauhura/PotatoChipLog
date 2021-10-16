@@ -30,7 +30,7 @@
         ]
     },
     {
-        "date":"2021-10-13",
+        "date":"2021-10-14",
         "time": 780,
         "topic": "Core",
         "content": [
@@ -40,6 +40,26 @@
                     "Trabalhei na implementação do Core, incluindo ALU e rigistradores. ",
                     "Destaco que após adotar um regime de testes mais rígidos, pude melhorar de forma significativa a qualidade da implementação. ",
                     "Bugs pequenos como a falta de um `break;` ou alteração do valor da variável errada costumam ser pegos durante a execução dos testes."
+                ]
+            },
+            {
+                "t": "p",
+                "i": [
+                    "Um exemplo foi uma operação de shift aritmético que o correto seria `$signed($signed(a) >>> b[4:0]`, mas inicialmente tinha escrito `a >>> b[4:0]`."
+                ]
+            }
+        ]
+    },
+    {
+        "date":"2021-10-15",
+        "time": 480,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": [
+                    "Continuei o trabalho no core para processamento de instruções e uma implementação inicial de exceções. ",
+                    "Para tal adicionei parte do sistema para gerar binários para execução em testes a partir de arquivos em assembly."
                 ]
             }
         ]
