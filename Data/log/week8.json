@@ -1,0 +1,35 @@
+[
+    {
+        "date":"2021-10-21",
+        "time": 480,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Pesquisei papers relacionados a FPGA para escrever parte da introdução da monografia. Preparei um segundo computador meu para programar a FPGA devivo a organização do meu espaço de trabalho"
+            }
+        ]
+    },
+    {
+        "date":"2021-10-22",
+        "time": 600,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei no design da interface de IO do core e realizei alguns testes no Vivado para programar a FPGA."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-23",
+        "time": 480,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei o trabalho de design das interfaces do core com base no hardware da FPGA e explorei possíveis interfaces para debug do cores."
+            }
+        ]
+    }
+]

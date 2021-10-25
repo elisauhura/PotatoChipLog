@@ -57,7 +57,7 @@ td._2 {
 td._3 {
     background-color: lightpink;
 }
-</style><title >Potato Chip I</title></head><body ><h1 >Potato Chip I</h1><p >O processo de desenvolvimento de uma CPU RISC-V</p><section  id="_C68965DF-3CE5-4CB9-AA89-8B5215A3BAD8"><h2 >Introdução</h2><button  onclick="if(document.querySelector('#_C68965DF-3CE5-4CB9-AA89-8B5215A3BAD8 > div').style.display === 'none') { document.querySelector('#_C68965DF-3CE5-4CB9-AA89-8B5215A3BAD8 > div').style.display = ''; document.querySelector('#_C68965DF-3CE5-4CB9-AA89-8B5215A3BAD8 > button').innerHTML='esconder'; } else { document.querySelector('#_C68965DF-3CE5-4CB9-AA89-8B5215A3BAD8 > div').style.display = 'none'; document.querySelector('#_C68965DF-3CE5-4CB9-AA89-8B5215A3BAD8 > button').innerHTML='expandir'; }">esconder</button><div  style=""><p>
+</style><title >Potatov</title></head><body ><h1 >Potatov</h1><p >O processo de desenvolvimento de uma CPU RISC-V</p><section  id="_60C5B314-663F-45BB-B8AA-8E1278D0B0D8"><h2 >Introdução</h2><button  onclick="if(document.querySelector('#_60C5B314-663F-45BB-B8AA-8E1278D0B0D8 > div').style.display === 'none') { document.querySelector('#_60C5B314-663F-45BB-B8AA-8E1278D0B0D8 > div').style.display = ''; document.querySelector('#_60C5B314-663F-45BB-B8AA-8E1278D0B0D8 > button').innerHTML='esconder'; } else { document.querySelector('#_60C5B314-663F-45BB-B8AA-8E1278D0B0D8 > div').style.display = 'none'; document.querySelector('#_60C5B314-663F-45BB-B8AA-8E1278D0B0D8 > button').innerHTML='expandir'; }">esconder</button><div  style=""><p>
 A RISC-V é uma arquitetura de conjunto de instruções (ISA) aberta e disponível de forma gratuita tanto para a indústria quanto para a academia sendo padronizada e patrocinada pela RISC-V International, uma organização inter-nacional sem fins lucrativos, que possui dentre seus membros grandes empresas do setor de tecnologia como Google, Alibaba Cloud e Western Digital (<a href=https://riscv.org/members/>https://riscv.org/members/</a>)
 </p>
 <p>
@@ -76,16 +76,47 @@ Sua adoção vem aumentado em diversos campos o que acelera seu amadurecimento c
 Ao combinar todos os fatores apresentados, a arquitetura se torna uma opção interessante para o desenvolvimento de processadores para recreação ou estudo. Assim o objetivo deste trabalho é registrar o processo de desenvolvimento de um processador RV32IACZicsrZifencei apelidado de Potato Chip I com sua sintetização em uma FPGA (Xilinx Artix 7).
 </p>
 <h3>Arquitetura</h3>
+<ul>
+    <li>Detalhar Extensões</li>
+    <li>Base</li>
+    <li>Compressed instructions</li>
+    <li>Cover atomic and mul/div?</li>
+    <li>CSRs</li>
+    <li>Priviledged</li>
+</ul>
 <h3>Verilog</h3>
+<ul>
+    <li>Introdução</li>
+    <li>Modulos, Wire e Reg</li>
+    <li>logica combinatoria (assign)</li>
+    <li>logica sequencial (always)</li>
+    <li>Verilator</li>
+</ul>
 <p>
 </p>
 <h3>FPGA</h3>
 <p>
+    <i>Field-Programmable Gate Array</i> (FPGA) é um tipo de circuito integrado reconfigurável cujo comportamento é definido a partir da configuração do seu estado. É empregado o uso de um programa sintetizador que gera a partir de um módulo em HDL a configuração que ao ser aplicada na FPGA faz com que seu comportamento seja igual ao do módulo especificado. Essa propriedade de reconfiguração permite o desenvolvimento de protótipos com maior facilidade já que pequenos ajustes podem ser aplicados a partir da geração de uma nova configuracão. Dependendo dos requisitos de um projeto a tecnolgia também pode ser utilzada no produto final como é o caso dos aceladores de rede utilizados nas máquinas virtuais da Azure (<a href="https://www.youtube.com/watch?v=v_4Ap1bjwgs">link</a>).
+</p>
+<ul>
+    <li>Estrutura (CBL, Interconnect e IOB, see: ydi9eZ-rose1993)</li>
+    <li>CBL</li>
+    <li>Interconnect</li>
+    <li>lOB</li>
+    <li>Fluxo de sintese</li>
+</ul>
+<p>
+    
 </p>
 <h3>Objective-C</h3>
+<ul>
+    <li>Introdução</li>
+    <li>Cocoa+Xcode</li>
+    <li>Estrutura de testes</li>
+</ul>
 <p>
 </p>
-</div></section><section  id="_597A614A-74B2-4250-9D94-359DFE0216AE"><h2 >Desenvolvimento</h2><button  onclick="if(document.querySelector('#_597A614A-74B2-4250-9D94-359DFE0216AE > div').style.display === 'none') { document.querySelector('#_597A614A-74B2-4250-9D94-359DFE0216AE > div').style.display = ''; document.querySelector('#_597A614A-74B2-4250-9D94-359DFE0216AE > button').innerHTML='esconder'; } else { document.querySelector('#_597A614A-74B2-4250-9D94-359DFE0216AE > div').style.display = 'none'; document.querySelector('#_597A614A-74B2-4250-9D94-359DFE0216AE > button').innerHTML='expandir'; }">esconder</button><div  style=""><h3> Ambiente de desenvolvimento </h3>
+</div></section><section  id="_EC5963FF-8362-4612-8AA7-735FBD3CFC11"><h2 >Desenvolvimento</h2><button  onclick="if(document.querySelector('#_EC5963FF-8362-4612-8AA7-735FBD3CFC11 > div').style.display === 'none') { document.querySelector('#_EC5963FF-8362-4612-8AA7-735FBD3CFC11 > div').style.display = ''; document.querySelector('#_EC5963FF-8362-4612-8AA7-735FBD3CFC11 > button').innerHTML='esconder'; } else { document.querySelector('#_EC5963FF-8362-4612-8AA7-735FBD3CFC11 > div').style.display = 'none'; document.querySelector('#_EC5963FF-8362-4612-8AA7-735FBD3CFC11 > button').innerHTML='expandir'; }">esconder</button><div  style=""><h3> Ambiente de desenvolvimento </h3>
 
 (a ideia aqui é descrever os equipamentos utilizados)
 
@@ -105,17 +136,15 @@ O Potato Chip I foi densenvolvido em um Macbook Pro 15" 2019 rodando:
 ADICIONAR PLACAS de desenvolvimento
 </p>
 
-<h3>Planjamento Inicial</h3>
-
-Escrever sobre o planejamento inical e divisão de partes
-
-<h3>Problemas encontrados</h3>
-
-Pain points que levaram a reestruturação do projeto
-
-<h3>Estrutura do Projeto</h3>
-
-Explicar a versão finao do projeto
+<h3> Estrutura do Projeto </h3>
+<h3> TestBench </h3>
+<h3> Módulos em ObjC </h3>
+<h3> Testes </h3>
+<h3> Simulador </h3>
+<h3> Hardware </h3>
+<h3> Verificação </h3>
+<h3> Compilação de programas </h3>
+<h3> Ambiente da FPGA (UART, cache e afins) </h3>
 
 ----
 
@@ -141,7 +170,15 @@ Foi definido no início do projeto que o processador deveria ter dois ambientes 
     Benchmarking
 
 
-</div></section><section  id="_83C4084D-0422-4E06-9783-F468BA3EBC72"><h2 >Resultados</h2><button  onclick="if(document.querySelector('#_83C4084D-0422-4E06-9783-F468BA3EBC72 > div').style.display === 'none') { document.querySelector('#_83C4084D-0422-4E06-9783-F468BA3EBC72 > div').style.display = ''; document.querySelector('#_83C4084D-0422-4E06-9783-F468BA3EBC72 > button').innerHTML='esconder'; } else { document.querySelector('#_83C4084D-0422-4E06-9783-F468BA3EBC72 > div').style.display = 'none'; document.querySelector('#_83C4084D-0422-4E06-9783-F468BA3EBC72 > button').innerHTML='expandir'; }">esconder</button><div  style=""></div></section><section  id="_3F333157-1C45-434F-B23B-B113BBA3B2CF"><h2 >Conclusão</h2><button  onclick="if(document.querySelector('#_3F333157-1C45-434F-B23B-B113BBA3B2CF > div').style.display === 'none') { document.querySelector('#_3F333157-1C45-434F-B23B-B113BBA3B2CF > div').style.display = ''; document.querySelector('#_3F333157-1C45-434F-B23B-B113BBA3B2CF > button').innerHTML='esconder'; } else { document.querySelector('#_3F333157-1C45-434F-B23B-B113BBA3B2CF > div').style.display = 'none'; document.querySelector('#_3F333157-1C45-434F-B23B-B113BBA3B2CF > button').innerHTML='expandir'; }">esconder</button><div  style=""></div></section><section  id="_3AA6FF25-7DE9-4EBD-8200-399FFAB645D9"><h2 >Referências</h2><button  onclick="if(document.querySelector('#_3AA6FF25-7DE9-4EBD-8200-399FFAB645D9 > div').style.display === 'none') { document.querySelector('#_3AA6FF25-7DE9-4EBD-8200-399FFAB645D9 > div').style.display = ''; document.querySelector('#_3AA6FF25-7DE9-4EBD-8200-399FFAB645D9 > button').innerHTML='esconder'; } else { document.querySelector('#_3AA6FF25-7DE9-4EBD-8200-399FFAB645D9 > div').style.display = 'none'; document.querySelector('#_3AA6FF25-7DE9-4EBD-8200-399FFAB645D9 > button').innerHTML='expandir'; }">esconder</button><div  style=""><ol>
+</div></section><section  id="_EA549FFF-D006-4E48-A15C-0A974B8BE90F"><h2 >Resultados</h2><button  onclick="if(document.querySelector('#_EA549FFF-D006-4E48-A15C-0A974B8BE90F > div').style.display === 'none') { document.querySelector('#_EA549FFF-D006-4E48-A15C-0A974B8BE90F > div').style.display = ''; document.querySelector('#_EA549FFF-D006-4E48-A15C-0A974B8BE90F > button').innerHTML='esconder'; } else { document.querySelector('#_EA549FFF-D006-4E48-A15C-0A974B8BE90F > div').style.display = 'none'; document.querySelector('#_EA549FFF-D006-4E48-A15C-0A974B8BE90F > button').innerHTML='expandir'; }">esconder</button><div  style=""><h3>Design do núcleo</h3>
+<h3>Benchmarks</h3>
+</div></section><section  id="_73A53514-7022-491E-BF99-EF6876F65D4B"><h2 >Conclusão</h2><button  onclick="if(document.querySelector('#_73A53514-7022-491E-BF99-EF6876F65D4B > div').style.display === 'none') { document.querySelector('#_73A53514-7022-491E-BF99-EF6876F65D4B > div').style.display = ''; document.querySelector('#_73A53514-7022-491E-BF99-EF6876F65D4B > button').innerHTML='esconder'; } else { document.querySelector('#_73A53514-7022-491E-BF99-EF6876F65D4B > div').style.display = 'none'; document.querySelector('#_73A53514-7022-491E-BF99-EF6876F65D4B > button').innerHTML='expandir'; }">esconder</button><div  style="">
+<h3>Metodologia de desenolvimento</h3>
+<h3>Fim</h3>
+<p>
+Falar do processo de desenvolvimento e os resultados obtidos.
+</p>
+</div></section><section  id="_24B54E54-3420-49E9-819F-D55BA8200154"><h2 >Referências</h2><button  onclick="if(document.querySelector('#_24B54E54-3420-49E9-819F-D55BA8200154 > div').style.display === 'none') { document.querySelector('#_24B54E54-3420-49E9-819F-D55BA8200154 > div').style.display = ''; document.querySelector('#_24B54E54-3420-49E9-819F-D55BA8200154 > button').innerHTML='esconder'; } else { document.querySelector('#_24B54E54-3420-49E9-819F-D55BA8200154 > div').style.display = 'none'; document.querySelector('#_24B54E54-3420-49E9-819F-D55BA8200154 > button').innerHTML='expandir'; }">esconder</button><div  style=""><ol>
     <li>
         [Waterman et al. 2019] Editores Andrew Waterman and Krste Asanović. The RISC-V Instruction Set Manual ,Volume I: User-Level ISA. Versão 20191213.RISC-V Foundation, dezembro de 2019.
     </li>

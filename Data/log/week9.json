@@ -1,0 +1,13 @@
+[
+    {
+        "date":"2021-10-21",
+        "time": 120,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Li papers relacionados a FPGA para escrever parte da introdução da monografia: Architecture of Field-Programmable Gate Arrays por ROSE et al e Three Ages of FPGAs: A Retrospective on the First Thirty Years of FPGA Technology por TRIMBERGER."
+            }
+        ]
+    }
+]

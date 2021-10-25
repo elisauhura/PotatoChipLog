@@ -12,20 +12,20 @@
     },
     {
       "t": "title",
-      "i": "Potato 1"
+      "i": "Potatov"
     }
   ],
   "b": [
     {
       "t": "h1",
-      "i": "Potato 1"
+      "i": "Potatov"
     },
     {
       "t": "p",
       "i": [
           {
             "t": "a",
-            "href": "https://github.com/elisauhura/PotatoChip",
+            "href": "https://github.com/elisauhura/Potatov",
             "i": "Repositório no Github"
           },
           " | ",

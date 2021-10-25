@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4C26F6FD27148B96005A059E /* UHRInjectHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26F6FC27148B96005A059E /* UHRInjectHTML.m */; };
+		4C57B91527205E08007871E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57B91427205E08007871E1 /* AppDelegate.m */; };
+		4C57B91727205E0A007871E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C57B91627205E0A007871E1 /* Assets.xcassets */; };
+		4C57B91A27205E0A007871E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C57B91827205E0A007871E1 /* MainMenu.xib */; };
+		4C57B91C27205E0A007871E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57B91B27205E0A007871E1 /* main.m */; };
+		4C57B92327206572007871E1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C57B9212720641A007871E1 /* WebKit.framework */; };
 		4CE52DAB270E9718008D5981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DAA270E9718008D5981 /* main.m */; };
 		4CE52DDE270E9D95008D5981 /* UHRRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DD9270E9D94008D5981 /* UHRRender.m */; };
 		4CE52E6B270EA2E2008D5981 /* UHRRenderLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DDA270E9D94008D5981 /* UHRRenderLog.m */; };
@@ -40,6 +45,16 @@
 		4C26F7302714D5FF005A059E /* resultados.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = resultados.html; sourceTree = "<group>"; };
 		4C26F7312714D610005A059E /* conclusao.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = conclusao.html; sourceTree = "<group>"; };
 		4C26F7332714D6BA005A059E /* referencias.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = referencias.html; sourceTree = "<group>"; };
+		4C57B91127205E08007871E1 /* QuickWebViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickWebViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C57B91327205E08007871E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C57B91427205E08007871E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C57B91627205E0A007871E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C57B91927205E0A007871E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C57B91B27205E0A007871E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C57B91D27205E0A007871E1 /* QuickWebViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickWebViewer.entitlements; sourceTree = "<group>"; };
+		4C57B9212720641A007871E1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4C765B6D272700390081C9A6 /* week9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week9.json; sourceTree = "<group>"; };
+		4CE3D7162723C4AB00436744 /* week8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week8.json; sourceTree = "<group>"; };
 		4CE52DA7270E9718008D5981 /* PotatoChipLog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PotatoChipLog; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE52DAA270E9718008D5981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CE52DB1270E979A008D5981 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -85,6 +100,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C57B90E27205E08007871E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C57B92327206572007871E1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +185,22 @@
 		4C26F7122714B842005A059E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C57B9212720641A007871E1 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C57B91227205E08007871E1 /* QuickWebViewer */ = {
+			isa = PBXGroup;
+			children = (
+				4C57B91327205E08007871E1 /* AppDelegate.h */,
+				4C57B91427205E08007871E1 /* AppDelegate.m */,
+				4C57B91627205E0A007871E1 /* Assets.xcassets */,
+				4C57B91827205E0A007871E1 /* MainMenu.xib */,
+				4C57B91B27205E0A007871E1 /* main.m */,
+				4C57B91D27205E0A007871E1 /* QuickWebViewer.entitlements */,
+			);
+			path = QuickWebViewer;
 			sourceTree = "<group>";
 		};
 		4CE52D9E270E9718008D5981 = {
@@ -177,6 +214,7 @@
 				4CE52E86270EA919008D5981 /* template */,
 				4CE52DBB270E9857008D5981 /* mac0499 */,
 				4CE52E72270EA38A008D5981 /* bin */,
+				4C57B91227205E08007871E1 /* QuickWebViewer */,
 				4CE52DA8270E9718008D5981 /* Products */,
 				4C26F7122714B842005A059E /* Frameworks */,
 			);
@@ -194,6 +232,7 @@
 				4CE52E60270EA27E008D5981 /* libUHRRenderModuleInjectJSON.dylib */,
 				4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */,
 				4C26F6FB27148B4C005A059E /* libUHRRenderModuleInjectHTML.dylib */,
+				4C57B91127205E08007871E1 /* QuickWebViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,6 +322,8 @@
 				4CE52DB4270E9812008D5981 /* week5.json */,
 				4CE52DBA270E9812008D5981 /* week6.json */,
 				4C26F6EF271485EA005A059E /* week7.json */,
+				4CE3D7162723C4AB00436744 /* week8.json */,
+				4C765B6D272700390081C9A6 /* week9.json */,
 			);
 			path = log;
 			sourceTree = "<group>";
@@ -365,6 +406,23 @@
 			productName = "UHRRenderModuleRenderLog!";
 			productReference = 4C26F6FB27148B4C005A059E /* libUHRRenderModuleInjectHTML.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
+		};
+		4C57B91027205E08007871E1 /* QuickWebViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C57B92027205E0A007871E1 /* Build configuration list for PBXNativeTarget "QuickWebViewer" */;
+			buildPhases = (
+				4C57B90D27205E08007871E1 /* Sources */,
+				4C57B90E27205E08007871E1 /* Frameworks */,
+				4C57B90F27205E08007871E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickWebViewer;
+			productName = QuickWebViewer;
+			productReference = 4C57B91127205E08007871E1 /* QuickWebViewer.app */;
+			productType = "com.apple.product-type.application";
 		};
 		4CE52DA6270E9718008D5981 /* PotatoChipLog */ = {
 			isa = PBXNativeTarget;
@@ -513,6 +571,9 @@
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = Uhura;
 				TargetAttributes = {
+					4C57B91027205E08007871E1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					4CE52DA6270E9718008D5981 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -543,9 +604,22 @@
 				4CE52E57270EA27E008D5981 /* UHRRenderModuleInjectJSON */,
 				4CE52E61270EA2C8008D5981 /* UHRRenderModuleList */,
 				4C26F6F327148B4C005A059E /* UHRRenderModuleInjectHTML */,
+				4C57B91027205E08007871E1 /* QuickWebViewer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C57B90F27205E08007871E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C57B91727205E0A007871E1 /* Assets.xcassets in Resources */,
+				4C57B91A27205E0A007871E1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C26F6F527148B4C005A059E /* Sources */ = {
@@ -553,6 +627,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C26F6FD27148B96005A059E /* UHRInjectHTML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C57B90D27205E08007871E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C57B91C27205E0A007871E1 /* main.m in Sources */,
+				4C57B91527205E08007871E1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +706,17 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		4C57B91827205E0A007871E1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C57B91927205E0A007871E1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4C26F6F927148B4C005A059E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -647,6 +741,58 @@
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4C57B91E27205E0A007871E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickWebViewer/QuickWebViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Uhura. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.uhura.QuickWebViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		4C57B91F27205E0A007871E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickWebViewer/QuickWebViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Uhura. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.uhura.QuickWebViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -975,6 +1121,15 @@
 			buildConfigurations = (
 				4C26F6F927148B4C005A059E /* Debug */,
 				4C26F6FA27148B4C005A059E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C57B92027205E0A007871E1 /* Build configuration list for PBXNativeTarget "QuickWebViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C57B91E27205E0A007871E1 /* Debug */,
+				4C57B91F27205E0A007871E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
