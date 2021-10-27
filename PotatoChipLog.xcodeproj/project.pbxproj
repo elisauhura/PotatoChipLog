@@ -568,7 +568,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				CLASSPREFIX = UHR;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = Uhura;
 				TargetAttributes = {
 					4C57B91027205E08007871E1 = {

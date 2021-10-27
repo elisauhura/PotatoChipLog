@@ -13,11 +13,22 @@
     {
         "date":"2021-10-25",
         "time": 240,
-        "topic": "Projecto",
+        "topic": "Projeto",
         "content": [
             {
                 "t": "p",
                 "i": "Gastei um tempo recuperando o projeto devido um ploblema ao tentar renomear ele e realizei o upgrade do para o macOS Monterey e não tive problemas. Além disso trabalhei no desenho final da arquitetura que pretendo entregar."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-26",
+        "time": 480,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei no módulo de UART para comnunicação."
             }
         ]
     }
