@@ -31,5 +31,38 @@
                 "i": "Trabalhei no módulo de UART para comnunicação."
             }
         ]
+    },
+    {
+        "date":"2021-10-27",
+        "time": 540,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei o trabalho no módulo de UART para comnunicação."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-28",
+        "time": 780,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Terminei o trabalho no módulo de UART para comnunicação."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-29",
+        "time": 420,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei na arquitetura de interrupt do core."
+            }
+        ]
     }
 ]
