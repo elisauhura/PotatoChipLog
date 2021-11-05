@@ -28,7 +28,7 @@
         "content": [
             {
                 "t": "p",
-                "i": "Trabalhei na parte de execute e captura de exceção do core."
+                "i": "Trabalhei na parte de execute e captura de exceção do core. Readicionando as instruções do grupo LUI e AUIPC."
             }
         ]
     },
@@ -39,7 +39,18 @@
         "content": [
             {
                 "t": "p",
-                "i": "Continuei na parte de execute e captura de exceção do core."
+                "i": "Continuei na parte de execute e captura de exceção do core. Readicionando as instruções do grupo OPIMM."
+            }
+        ]
+    },
+    {
+        "date":"2021-11-03",
+        "time": 150,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei na parte de execute e captura de exceção do core. Readicionando as instruções do grupo OP."
             }
         ]
     }
