@@ -22,6 +22,12 @@
 		4CE52E6F270EA2EE008D5981 /* UHRInjectCSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC6270E9D8C008D5981 /* UHRInjectCSS.m */; };
 		4CE52E70270EA2F0008D5981 /* UHRInjectJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC7270E9D8C008D5981 /* UHRInjectJSON.m */; };
 		4CE52E71270EA2F3008D5981 /* UHRList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52DC8270E9D8C008D5981 /* UHRList.m */; };
+		4CEE74E1272EE93F00DFA592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE74E0272EE93F00DFA592 /* AppDelegate.m */; };
+		4CEE74E3272EE94100DFA592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEE74E2272EE94100DFA592 /* Assets.xcassets */; };
+		4CEE74E6272EE94100DFA592 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEE74E4272EE94100DFA592 /* MainMenu.xib */; };
+		4CEE74E8272EE94100DFA592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE74E7272EE94100DFA592 /* main.m */; };
+		4CEE74F3272EEBE700DFA592 /* UHRCodeBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE74F1272EEBE700DFA592 /* UHRCodeBoxController.m */; };
+		4CEE74F4272EEBE700DFA592 /* UHRCodeBoxController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEE74F2272EEBE700DFA592 /* UHRCodeBoxController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +99,17 @@
 		4CE52E8A270EA919008D5981 /* index.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
 		4CE52E8D270EAD1B008D5981 /* monografia.skeleton */ = {isa = PBXFileReference; explicitFileType = text.json; path = monografia.skeleton; sourceTree = "<group>"; };
 		4CE52E8E270EADB1008D5981 /* monografia.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = monografia.html; sourceTree = "<group>"; };
+		4CEE74D8272EE5D300DFA592 /* week10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week10.json; sourceTree = "<group>"; };
+		4CEE74DD272EE93F00DFA592 /* FlyingBoxes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingBoxes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CEE74DF272EE93F00DFA592 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CEE74E0272EE93F00DFA592 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CEE74E2272EE94100DFA592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CEE74E5272EE94100DFA592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4CEE74E7272EE94100DFA592 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CEE74E9272EE94100DFA592 /* FlyingBoxes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlyingBoxes.entitlements; sourceTree = "<group>"; };
+		4CEE74F0272EEBE700DFA592 /* UHRCodeBoxController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UHRCodeBoxController.h; sourceTree = "<group>"; };
+		4CEE74F1272EEBE700DFA592 /* UHRCodeBoxController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UHRCodeBoxController.m; sourceTree = "<group>"; };
+		4CEE74F2272EEBE700DFA592 /* UHRCodeBoxController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UHRCodeBoxController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +184,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CEE74DA272EE93F00DFA592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -212,9 +236,10 @@
 				4CE52DB3270E9812008D5981 /* Data */,
 				4CE52DE1270E9F67008D5981 /* Modules */,
 				4CE52E86270EA919008D5981 /* template */,
-				4CE52DBB270E9857008D5981 /* mac0499 */,
+				4CE52DBB270E9857008D5981 /* docs */,
 				4CE52E72270EA38A008D5981 /* bin */,
 				4C57B91227205E08007871E1 /* QuickWebViewer */,
+				4CEE74DE272EE93F00DFA592 /* FlyingBoxes */,
 				4CE52DA8270E9718008D5981 /* Products */,
 				4C26F7122714B842005A059E /* Frameworks */,
 			);
@@ -233,6 +258,7 @@
 				4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */,
 				4C26F6FB27148B4C005A059E /* libUHRRenderModuleInjectHTML.dylib */,
 				4C57B91127205E08007871E1 /* QuickWebViewer.app */,
+				4CEE74DD272EE93F00DFA592 /* FlyingBoxes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,7 +285,7 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		4CE52DBB270E9857008D5981 /* mac0499 */ = {
+		4CE52DBB270E9857008D5981 /* docs */ = {
 			isa = PBXGroup;
 			children = (
 				4CE52DC4270E9860008D5981 /* img */,
@@ -268,7 +294,7 @@
 				4CE52DBE270E9857008D5981 /* compromissos.html */,
 				4CE52DC0270E9857008D5981 /* RVV.html */,
 			);
-			path = mac0499;
+			path = docs;
 			sourceTree = "<group>";
 		};
 		4CE52DC4270E9860008D5981 /* img */ = {
@@ -324,8 +350,25 @@
 				4C26F6EF271485EA005A059E /* week7.json */,
 				4CE3D7162723C4AB00436744 /* week8.json */,
 				4C765B6D272700390081C9A6 /* week9.json */,
+				4CEE74D8272EE5D300DFA592 /* week10.json */,
 			);
 			path = log;
+			sourceTree = "<group>";
+		};
+		4CEE74DE272EE93F00DFA592 /* FlyingBoxes */ = {
+			isa = PBXGroup;
+			children = (
+				4CEE74DF272EE93F00DFA592 /* AppDelegate.h */,
+				4CEE74E0272EE93F00DFA592 /* AppDelegate.m */,
+				4CEE74E2272EE94100DFA592 /* Assets.xcassets */,
+				4CEE74E4272EE94100DFA592 /* MainMenu.xib */,
+				4CEE74E7272EE94100DFA592 /* main.m */,
+				4CEE74E9272EE94100DFA592 /* FlyingBoxes.entitlements */,
+				4CEE74F0272EEBE700DFA592 /* UHRCodeBoxController.h */,
+				4CEE74F1272EEBE700DFA592 /* UHRCodeBoxController.m */,
+				4CEE74F2272EEBE700DFA592 /* UHRCodeBoxController.xib */,
+			);
+			path = FlyingBoxes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,6 +603,23 @@
 			productReference = 4CE52E6A270EA2C8008D5981 /* libUHRRenderModuleList.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		4CEE74DC272EE93F00DFA592 /* FlyingBoxes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CEE74EC272EE94100DFA592 /* Build configuration list for PBXNativeTarget "FlyingBoxes" */;
+			buildPhases = (
+				4CEE74D9272EE93F00DFA592 /* Sources */,
+				4CEE74DA272EE93F00DFA592 /* Frameworks */,
+				4CEE74DB272EE93F00DFA592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyingBoxes;
+			productName = FlyingBoxes;
+			productReference = 4CEE74DD272EE93F00DFA592 /* FlyingBoxes.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -579,6 +639,9 @@
 					};
 					4CE52E25270EA26F008D5981 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					4CEE74DC272EE93F00DFA592 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -605,6 +668,7 @@
 				4CE52E61270EA2C8008D5981 /* UHRRenderModuleList */,
 				4C26F6F327148B4C005A059E /* UHRRenderModuleInjectHTML */,
 				4C57B91027205E08007871E1 /* QuickWebViewer */,
+				4CEE74DC272EE93F00DFA592 /* FlyingBoxes */,
 			);
 		};
 /* End PBXProject section */
@@ -616,6 +680,16 @@
 			files = (
 				4C57B91727205E0A007871E1 /* Assets.xcassets in Resources */,
 				4C57B91A27205E0A007871E1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CEE74DB272EE93F00DFA592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CEE74F4272EEBE700DFA592 /* UHRCodeBoxController.xib in Resources */,
+				4CEE74E3272EE94100DFA592 /* Assets.xcassets in Resources */,
+				4CEE74E6272EE94100DFA592 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +778,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CEE74D9272EE93F00DFA592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CEE74E8272EE94100DFA592 /* main.m in Sources */,
+				4CEE74E1272EE93F00DFA592 /* AppDelegate.m in Sources */,
+				4CEE74F3272EEBE700DFA592 /* UHRCodeBoxController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -711,6 +795,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C57B91927205E0A007871E1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4CEE74E4272EE94100DFA592 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CEE74E5272EE94100DFA592 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1113,6 +1205,60 @@
 			};
 			name = Release;
 		};
+		4CEE74EA272EE94100DFA592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlyingBoxes/FlyingBoxes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Uhura. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.uhura.FlyingBoxes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		4CEE74EB272EE94100DFA592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlyingBoxes/FlyingBoxes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDL4S5S8SE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Uhura. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.uhura.FlyingBoxes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1211,6 +1357,15 @@
 			buildConfigurations = (
 				4CE52E68270EA2C8008D5981 /* Debug */,
 				4CE52E69270EA2C8008D5981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CEE74EC272EE94100DFA592 /* Build configuration list for PBXNativeTarget "FlyingBoxes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CEE74EA272EE94100DFA592 /* Debug */,
+				4CEE74EB272EE94100DFA592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

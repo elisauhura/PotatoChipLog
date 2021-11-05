@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="pt"><head ><meta  charset="UTF-8"/><style>
+body {
+    font-family: sans-serif;
+}
+
+section {
+    position: relative;
+    padding: 1rem;
+    border-bottom: black 1px solid;
+}
+section > button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+blockquote {
+    border-left: lightgray 0.2rem solid;
+    padding-left: 1.5rem;
+    color: #444;
+}
+
+table {
+    border-collapse: collapse;
+    border-top: gray 1px solid;
+    border-left: gray 1px solid;
+}
+
+tr {
+    border-bottom: gray 1px solid;
+}
+
+td {
+    border-right: gray 1px solid;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead > tr:nth-child(1) > td:nth-child(3) {
+    text-align: center;
+}
+
+td {
+    min-width: 3rem;
+}
+
+td._1 {
+    background-color: lightsalmon;
+}
+
+td._2 {
+    background-color: lightgreen;
+}
+
+td._3 {
+    background-color: lightpink;
+}
+</style><title >Potatov</title></head><body ><h1 >Potatov</h1><p >O processo de desenvolvimento de uma CPU RISC-V</p><section  id="_7FAC227B-DF56-4D28-B246-C4A468BD6A50"><h2 >Introdução</h2><button  onclick="if(document.querySelector('#_7FAC227B-DF56-4D28-B246-C4A468BD6A50 > div').style.display === 'none') { document.querySelector('#_7FAC227B-DF56-4D28-B246-C4A468BD6A50 > div').style.display = ''; document.querySelector('#_7FAC227B-DF56-4D28-B246-C4A468BD6A50 > button').innerHTML='esconder'; } else { document.querySelector('#_7FAC227B-DF56-4D28-B246-C4A468BD6A50 > div').style.display = 'none'; document.querySelector('#_7FAC227B-DF56-4D28-B246-C4A468BD6A50 > button').innerHTML='expandir'; }">esconder</button><div  style=""><p>
+A RISC-V é uma arquitetura de conjunto de instruções (ISA) aberta e disponível de forma gratuita tanto para a indústria quanto para a academia sendo padronizada e patrocinada pela RISC-V International, uma organização inter-nacional sem fins lucrativos, que possui dentre seus membros grandes empresas do setor de tecnologia como Google, Alibaba Cloud e Western Digital (<a href=https://riscv.org/members/>https://riscv.org/members/</a>)
+</p>
+<p>
+Ela usa um modelo de conjunto base combinado com conjuntos de extensões. O conjunto base define o tamanho e a quantidade de registradores e as instruções básicas (leitura, escrita, pulo, pulo condicional, operações em inteiros e chamadas de sistema) enquanto as extensões definem instruções extras e em alguns casos outros registradores para operações mais complexas como suporte a ponto flutuante ou memória virtual.
+</p>
+<p>
+Assim um chip rodando RISC-V projetado para um dispositivo embarcado pode implementar o mínimo necessário de instruções para reduzir os custos e o tamanho do chip enquanto um chip para workstations pode implementar extensões como a de vetores para acelerar cargas de trabalho. Apesar da diferença entre operações suportadas, ambos os processadores partilham de um conjunto de instruções base e por consequência podem partilhar de uma toolchain similar.
+</p>
+<p>
+A arquitetura já conta com o suporte de  compiladores importantes como o <a href="https://llvm.org/doxygen/Triple_8h_source.html">LLVM</a>, o GCC e o compilador da <a href="https://golang.org/doc/install/source#environment">Go</a>. Além de imple-mentações de código fechado, existem diversas implementações de código aberto disponíveis como a <a href="https://github.com/olofk/serv">SERV</a> e  a <a href="https://github.com/chipsalliance/Cores-SweRV-EH2">SweRV EH2</a>, desenvolvida pela Western Digital.
+</p>
+<p>
+Sua adoção vem aumentado em diversos campos o que acelera seu amadurecimento como arquitetura que combinado com sua licença aberta permite um efeito bola de neve. Destaca-se dentre notícias recentes o uso da RISC-V no Nios® V/m da Intel, usado como processador para FPGAs da marca, e a produção da primeira leva de chips de teste do processador  <a href="https://www.european-processor-initiative.eu/tag/epac/">EPAC 1.0</a> da European Processor Initiative que utiliza a arquitetura.
+</p>
+<p>
+Ao combinar todos os fatores apresentados, a arquitetura se torna uma opção interessante para o desenvolvimento de processadores para recreação ou estudo. Assim o objetivo deste trabalho é registrar o processo de desenvolvimento de um processador RV32IACZicsrZifencei apelidado de Potato Chip I com sua sintetização em uma FPGA (Xilinx Artix 7).
+</p>
+<h3>Arquitetura</h3>
+<ul>
+    <li>Detalhar Extensões</li>
+    <li>Base</li>
+    <li>Compressed instructions</li>
+    <li>Cover atomic and mul/div?</li>
+    <li>CSRs</li>
+    <li>Priviledged</li>
+</ul>
+<h3>Verilog</h3>
+<ul>
+    <li>Introdução</li>
+    <li>Modulos, Wire e Reg</li>
+    <li>logica combinatoria (assign)</li>
+    <li>logica sequencial (always)</li>
+    <li>Verilator</li>
+</ul>
+<p>
+</p>
+<h3>FPGA</h3>
+<p>
+    <i>Field-Programmable Gate Array</i> (FPGA) é um tipo de circuito integrado reconfigurável cujo comportamento é definido a partir da configuração do seu estado. É empregado o uso de um programa sintetizador que gera a partir de um módulo em HDL a configuração que ao ser aplicada na FPGA faz com que seu comportamento seja igual ao do módulo especificado. Essa propriedade de reconfiguração permite o desenvolvimento de protótipos com maior facilidade já que pequenos ajustes podem ser aplicados a partir da geração de uma nova configuracão. Dependendo dos requisitos de um projeto a tecnolgia também pode ser utilzada no produto final como é o caso dos aceladores de rede utilizados nas máquinas virtuais da Azure (<a href="https://www.youtube.com/watch?v=v_4Ap1bjwgs">link</a>).
+</p>
+<ul>
+    <li>Estrutura (CBL, Interconnect e IOB, see: ydi9eZ-rose1993)</li>
+    <li>CBL</li>
+    <li>Interconnect</li>
+    <li>lOB</li>
+    <li>Fluxo de sintese</li>
+</ul>
+<p>
+    
+</p>
+<h3>Objective-C</h3>
+<ul>
+    <li>Introdução</li>
+    <li>Cocoa+Xcode</li>
+    <li>Estrutura de testes</li>
+</ul>
+<p>
+</p>
+</div></section><section  id="_79DDA6E1-0D7D-4927-84B2-CDA1B4EA5D5C"><h2 >Desenvolvimento</h2><button  onclick="if(document.querySelector('#_79DDA6E1-0D7D-4927-84B2-CDA1B4EA5D5C > div').style.display === 'none') { document.querySelector('#_79DDA6E1-0D7D-4927-84B2-CDA1B4EA5D5C > div').style.display = ''; document.querySelector('#_79DDA6E1-0D7D-4927-84B2-CDA1B4EA5D5C > button').innerHTML='esconder'; } else { document.querySelector('#_79DDA6E1-0D7D-4927-84B2-CDA1B4EA5D5C > div').style.display = 'none'; document.querySelector('#_79DDA6E1-0D7D-4927-84B2-CDA1B4EA5D5C > button').innerHTML='expandir'; }">esconder</button><div  style=""><h3> Ambiente de desenvolvimento </h3>
+
+(a ideia aqui é descrever os equipamentos utilizados)
+
+<p>
+O Potato Chip I foi densenvolvido em um Macbook Pro 15" 2019 rodando:
+<ul>
+<li>macOS Big Sur 11.6</li>
+<li>Xcode 13.0</li>
+<li>RISCV-Tools 0.2</li>
+<li>Verilator 4.200</li>
+<li>Scansion 1.12</li>
+<li>Virtual Box 6.1</li>
+<li>Virtual Box Extension Pack 6.1</li>
+<li>Ubuntu 20.??</li>
+<li>Vivado 2018 ??</li>
+</ul>
+ADICIONAR PLACAS de desenvolvimento
+</p>
+
+<h3> Estrutura do Projeto </h3>
+<h3> TestBench </h3>
+<h3> Módulos em ObjC </h3>
+<h3> Testes </h3>
+<h3> Simulador </h3>
+<h3> Hardware </h3>
+<h3> Verificação </h3>
+<h3> Compilação de programas </h3>
+<h3> Ambiente da FPGA (UART, cache e afins) </h3>
+
+----
+
+
+Planejamento inicial
+Foi definido no início do projeto que o processador deveria ter dois ambientes alvos, um de simulação interativa com interface gráfica para configuração apelidado de PI Sim e um sintetizado em uma FPGA apelidado de PI Hard. Além disso seria necessário programas auxiliares para testes de unidade, benchmarks e registros de progresso.
+    Apesar de não ser um sistema operacional com um suporte abrangente na indústria design de hardware, foi escolhido usar o macOS para desenvolvimento devido o conhecimento prévio do sistema operacional e o eventual desafio de precisar desenvolver programas para completar certas tarefas. A única tarefa que exigiu o uso de uma máquina virtual foi a de sintetização e programação da FPGA já que o programa necessário para a tarefa não suporta o SO.
+    Para a implementação do núcleo do processador compartilhada entre os ambiente seria utilizada a linguagem Verilog. Os módulos auxiliares do PI Hard utilizariam a mesma linguagem enquanto os módulos auxiliares do PI Sim utilizariam Objective-C que seria também usada para a programação dos competentes gráficos.
+    Os testes utilizariam o framework de testes XCTest incluído no Xcode com com a implementação de classes auxiliares para estimular simulação, verificar restrições e imitar outros módulos.
+        
+    Ambiente do processador (memória comunicação e afins)
+
+    Ambiente de Desenvolvimento
+    
+    Implementação e simulação
+
+    Verificação
+
+    Sintetização e IO
+
+    Programação do sistema
+
+    Benchmarking
+
+
+</div></section><section  id="_7B19DD94-B704-4148-A6D0-5F537368E28D"><h2 >Resultados</h2><button  onclick="if(document.querySelector('#_7B19DD94-B704-4148-A6D0-5F537368E28D > div').style.display === 'none') { document.querySelector('#_7B19DD94-B704-4148-A6D0-5F537368E28D > div').style.display = ''; document.querySelector('#_7B19DD94-B704-4148-A6D0-5F537368E28D > button').innerHTML='esconder'; } else { document.querySelector('#_7B19DD94-B704-4148-A6D0-5F537368E28D > div').style.display = 'none'; document.querySelector('#_7B19DD94-B704-4148-A6D0-5F537368E28D > button').innerHTML='expandir'; }">esconder</button><div  style=""><h3>Design do núcleo</h3>
+<h3>Benchmarks</h3>
+</div></section><section  id="_4DDC38B0-65B6-4C10-8CDA-5084230414B3"><h2 >Conclusão</h2><button  onclick="if(document.querySelector('#_4DDC38B0-65B6-4C10-8CDA-5084230414B3 > div').style.display === 'none') { document.querySelector('#_4DDC38B0-65B6-4C10-8CDA-5084230414B3 > div').style.display = ''; document.querySelector('#_4DDC38B0-65B6-4C10-8CDA-5084230414B3 > button').innerHTML='esconder'; } else { document.querySelector('#_4DDC38B0-65B6-4C10-8CDA-5084230414B3 > div').style.display = 'none'; document.querySelector('#_4DDC38B0-65B6-4C10-8CDA-5084230414B3 > button').innerHTML='expandir'; }">esconder</button><div  style="">
+<h3>Metodologia de desenolvimento</h3>
+<h3>Fim</h3>
+<p>
+Falar do processo de desenvolvimento e os resultados obtidos.
+</p>
+</div></section><section  id="_36ACC416-97D0-4ACE-95D8-37C4968A7DDB"><h2 >Referências</h2><button  onclick="if(document.querySelector('#_36ACC416-97D0-4ACE-95D8-37C4968A7DDB > div').style.display === 'none') { document.querySelector('#_36ACC416-97D0-4ACE-95D8-37C4968A7DDB > div').style.display = ''; document.querySelector('#_36ACC416-97D0-4ACE-95D8-37C4968A7DDB > button').innerHTML='esconder'; } else { document.querySelector('#_36ACC416-97D0-4ACE-95D8-37C4968A7DDB > div').style.display = 'none'; document.querySelector('#_36ACC416-97D0-4ACE-95D8-37C4968A7DDB > button').innerHTML='expandir'; }">esconder</button><div  style=""><ol>
+    <li>
+        [Waterman et al. 2019] Editores Andrew Waterman and Krste Asanović. The RISC-V Instruction Set Manual ,Volume I: User-Level ISA. Versão 20191213.RISC-V Foundation, dezembro de 2019.
+    </li>
+    <li> 
+        [Waterman et al. 2019] Editores Andrew Waterman and Krste Asanović. The RISC-V Instruction Set Manual ,Volume II: Privileged Architecture. Versão 20190608-Priv-MSU-Ratified. RISC-V Foundation, junho de 2019.
+    </li>
+    <li><a href="https://www.sifive.com/blog/all-aboard-part-7-entering-and-exiting-the-linux-kernel-on-risc-v"> RISC-V traps</a>
+</ol>
+</div></section></body></html>

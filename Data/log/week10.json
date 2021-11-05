@@ -1,0 +1,46 @@
+[
+    {
+        "date":"2021-10-30",
+        "time": 120,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei na parte de fetch da arquitetura do core."
+            }
+        ]
+    },
+    {
+        "date":"2021-10-31",
+        "time": 180,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei na parte de execute da arquitetura do core."
+            }
+        ]
+    },
+    {
+        "date":"2021-11-01",
+        "time": 540,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei na parte de execute e captura de exceção do core."
+            }
+        ]
+    },
+    {
+        "date":"2021-11-03",
+        "time": 240,
+        "topic": "Core",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei na parte de execute e captura de exceção do core."
+            }
+        ]
+    }
+]

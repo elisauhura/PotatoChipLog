@@ -188,7 +188,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "mac0499"
+            argument = "docs"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

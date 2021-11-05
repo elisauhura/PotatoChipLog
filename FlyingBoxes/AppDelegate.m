@@ -11,6 +11,8 @@
 @interface AppDelegate ()
 
 @property (strong) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSView *scrollableView;
+
 @end
 
 @implementation AppDelegate
@@ -27,6 +29,10 @@
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
     return YES;
+}
+
+
+- (IBAction)addWindow:(id)sender {
 }
 
 
