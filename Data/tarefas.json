@@ -27,22 +27,22 @@
     {
         "n": "Desenvolvimento do núcleo",
         "s": "Em progresso",
-        "c": [0,0,0,0,0,0,0,0,1,1,3,0]
+        "c": [0,0,0,0,0,0,0,0,1,1,1,3]
     },
     {
         "n": "Validação e síntese do núcleo",
-        "s": "Espera",
-        "c": [0,0,0,0,0,0,0,0,0,0,3,0]
+        "s": "Em progresso",
+        "c": [0,0,0,0,0,0,0,0,0,0,1,3]
     },
     {
         "n": "Organização da documentação",
         "s": "Em progresso",
-        "c": [0,0,0,0,0,0,0,0,0,1,3,0]
+        "c": [0,0,0,0,0,0,0,0,0,1,1,3]
     },
     {
         "n": "Escrever monografia",
         "s": "Em progresso",
-        "c": [0,0,0,0,0,0,0,0,1,1,3,0]
+        "c": [0,0,0,0,0,0,0,0,1,1,1,3]
     },
     {
         "n": "Poster do TCC",
