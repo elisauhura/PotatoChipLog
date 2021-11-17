@@ -1,0 +1,13 @@
+[
+    {
+        "date":"2021-11-17",
+        "time": 120,
+        "topic": "Arquitetura",
+        "content": [
+            {
+                "t": "p",
+                "i": "Revisei a especificação da extensão A do RISC-V."
+            }
+        ]
+    }
+]
