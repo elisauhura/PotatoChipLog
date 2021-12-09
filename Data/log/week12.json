@@ -1,0 +1,101 @@
+[
+    {
+        "date":"2021-11-30",
+        "time": 180,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei na estrutura do texto da monografia, dividindo as seções que devem estar presentes na versão final."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-01",
+        "time": 100,
+        "topic": "Arquitetura",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei na parte de execute e captura de exceção do core. Readicionando as instruções do grupo FENCE."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-03",
+        "time": 100,
+        "topic": "Projeto",
+        "content": [
+            {
+                "t": "p",
+                "i": "Fiz ajustes para poder trabalhar no projeto usando um Mac usando o Apple Silicon."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-04",
+        "time": 300,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabahei na seção de introdução da monografia, incluido um overview sobre os assuntos abordados."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-05",
+        "time": 390,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continei o trabalho na introdução da monografia. Expandido a seção sobre RISC-V e Verilog."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-06",
+        "time": 150,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continei o trabalho na introdução da monografia. Reescrevendo a seção de Introdução."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-07",
+        "time": 480,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continei o trabalho na monografia. Adicionando detalhes sobre a notação utilizada no documento."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-08",
+        "time": 480,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continei o trabalho na monografia. Adicionando detalhes sobre a arquitetura RISC-V."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-08",
+        "time": 600,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continei o trabalho na monografia. Adicionando detalhes sobre a arquitetura RISC-V."
+            }
+        ]
+    }
+]

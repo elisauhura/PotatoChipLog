@@ -61,6 +61,7 @@
 		4C57B91D27205E0A007871E1 /* QuickWebViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickWebViewer.entitlements; sourceTree = "<group>"; };
 		4C57B9212720641A007871E1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4C765B6D272700390081C9A6 /* week9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week9.json; sourceTree = "<group>"; };
+		4C76BDD1274C9131002C41CD /* week12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week12.json; sourceTree = "<group>"; };
 		4CE3D7162723C4AB00436744 /* week8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week8.json; sourceTree = "<group>"; };
 		4CE52DA7270E9718008D5981 /* PotatoChipLog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PotatoChipLog; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE52DAA270E9718008D5981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -353,6 +354,7 @@
 				4C765B6D272700390081C9A6 /* week9.json */,
 				4CEE74D8272EE5D300DFA592 /* week10.json */,
 				4C2FA2022744A7DF00D82695 /* week11.json */,
+				4C76BDD1274C9131002C41CD /* week12.json */,
 			);
 			path = log;
 			sourceTree = "<group>";

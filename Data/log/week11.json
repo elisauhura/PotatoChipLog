@@ -1,12 +1,45 @@
 [
     {
-        "date":"2021-11-17",
-        "time": 120,
+        "date":"2021-11-16",
+        "time": 300,
         "topic": "Arquitetura",
         "content": [
             {
                 "t": "p",
                 "i": "Revisei a especificação da extensão A do RISC-V."
+            }
+        ]
+    },
+    {
+        "date":"2021-11-18",
+        "time": 540,
+        "topic": "Arquitetura",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei na parte de execute e captura de exceção do core. Readicionando as instruções do grupo LOAD."
+            }
+        ]
+    },
+    {
+        "date":"2021-11-18",
+        "time": 720,
+        "topic": "Arquitetura",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continuei na parte de execute e captura de exceção do core. Readicionando as instruções do grupo STORE."
+            }
+        ]
+    },
+    {
+        "date":"2021-11-19",
+        "time": 630,
+        "topic": "Arquitetura",
+        "content": [
+            {
+                "t": "p",
+                "i": "Comecei a trabalhar nas instruções de operação atômica e interrupção."
             }
         ]
     }
