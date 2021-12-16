@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C12C117276AE8EF0048043E /* week13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week13.json; sourceTree = "<group>"; };
 		4C26F6EF271485EA005A059E /* week7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = week7.json; sourceTree = "<group>"; };
 		4C26F6F1271486D2005A059E /* introducao.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = introducao.html; sourceTree = "<group>"; };
 		4C26F6F227148938005A059E /* desenvolvimento.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = desenvolvimento.html; sourceTree = "<group>"; };
@@ -355,6 +356,7 @@
 				4CEE74D8272EE5D300DFA592 /* week10.json */,
 				4C2FA2022744A7DF00D82695 /* week11.json */,
 				4C76BDD1274C9131002C41CD /* week12.json */,
+				4C12C117276AE8EF0048043E /* week13.json */,
 			);
 			path = log;
 			sourceTree = "<group>";
