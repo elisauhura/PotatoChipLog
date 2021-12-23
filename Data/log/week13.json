@@ -31,5 +31,104 @@
                 "i": "Continei o trabalho na monografia. Movendo o que estava escrito para o Latex."
             }
         ]
+    },
+    {
+        "date":"2021-12-16",
+        "time": 600,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Continei o trabalho na monografia. Adicionei a seção referente as instruções que realizam operações entre registradores e ou imediatos."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-17",
+        "time": 180,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Adicionei a seção referente as instruções de leitura e escrita."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-18",
+        "time": 480,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Adicionei a seção referente as instruções de barreira, chamadas ao ambiente e instruções comprimidas."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-19",
+        "time": 600,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Conclui a seção sobre RISC-V da monografia."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-20",
+        "time": 360,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Reveisei a introdução e escrevi a seção sobre Verilog."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-20",
+        "time": 720,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Escrevi a seção sobre Objetive-C, FPGAs."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-21",
+        "time": 720,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Trabalhei nos capítulo de Desenvolvimento e Conclusão."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-22",
+        "time": 840,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Terminei os capítulo de Desenvolvimento e Conclusão."
+            }
+        ]
+    },
+    {
+        "date":"2021-12-23",
+        "time": 360,
+        "topic": "Monografia",
+        "content": [
+            {
+                "t": "p",
+                "i": "Revisei a monografia."
+            }
+        ]
     }
 ]
